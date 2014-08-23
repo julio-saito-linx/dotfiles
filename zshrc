@@ -1,14 +1,52 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="rbates"
-DISABLE_AUTO_UPDATE="true"
-DISABLE_LS_COLORS="true"
+export ZSH=$HOME/.oh-my-zsh
 
-plugins=(git bundler brew gem rbates)
+ZSH_THEME="muse"
+
+DISABLE_AUTO_UPDATE="true"
+# DISABLE_LS_COLORS="true"
+
+plugins=(git rbates)
 
 export PATH="/usr/local/bin:$PATH"
-export EDITOR='mate -w'
+export EDITOR='subl'
 
 source $ZSH/oh-my-zsh.sh
 
-# for Homebrew installed rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+
+
+
+
+
+
+# gitAddCommitPushOriginMasterFunction() {
+#   NO_COLOR="$\e[0m"
+#   IRED="$\e[1;31m"
+#   IGRN="$\e[1;32m"
+
+#   if [ "$1" != "" ]; then
+#     # add all files
+#     echo -e $IGRN :: git add . -A$NO_COLOR
+#     git add . -A
+
+#     # commit with comment
+#     echo -e $IGRN :: git commit -m\'"$@"\'$NO_COLOR
+#     git commit -m "$*"
+
+#     # push to "origin master"
+#     echo -e $IGRN :: git push $NO_COLOR
+#     git push
+
+#   else
+
+#     echo -e ......................................
+#     echo -e $NO_COLOR git helper alias \(add, commit, push\)
+#     echo -e ......................................
+#     echo -e $IRED ERROR: Missing comment
+#     echo -e $IGRN usage: gc this is my comment$NO_COLOR
+#     echo -e ......................................
+
+#   fi
+# }
+
+# alias gc=gitAddCommitPushOriginMasterFunction
