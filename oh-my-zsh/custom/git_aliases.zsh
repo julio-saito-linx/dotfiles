@@ -29,3 +29,5 @@ gitAddCommitPushOriginMasterFunction() {
 }
 
 alias gc=gitAddCommitPushOriginMasterFunction
+alias gs='git status -sb'
+

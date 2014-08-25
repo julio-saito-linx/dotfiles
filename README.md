@@ -1,4 +1,5 @@
-# saitodisse fork
+
+# saitodisse's "Ryan Bates Dot Files" fork #
 
 ## Instalation
 ```shell
@@ -60,6 +61,7 @@ rake install
 | ------------- | ---------------------------------------------------------- |
 | g             | git                                                        |
 | gst           | git status                                                 |
+| gs            | git_aliases.zsh: git status -sb                            |
 | gd            | git diff                                                   |
 | gdc           | git diff --cached                                          |
 | gl            | git pull                                                   |
