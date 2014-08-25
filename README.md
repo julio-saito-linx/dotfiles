@@ -12,7 +12,48 @@ rake install
 ## ZSH
  - http://www.bash2zsh.com/zsh_refcard/refcard.pdf
 
-## git
+## aliases
+
+| Alias          | Command                         |
+| -------------- | ------------------------------- |
+| -              |  'cd -'                         |
+| ..             |  'cd ..'                        |
+| ...            |  'cd ../..'                     |
+| 1              |  'cd -'                         |
+| 2              |  'cd -2'                        |
+| 3              |  'cd -3'                        |
+| 4              |  'cd -4'                        |
+| 5              |  'cd -5'                        |
+| 6              |  'cd -6'                        |
+| 7              |  'cd -7'                        |
+| 8              |  'cd -8'                        |
+| 9              |  'cd -9'                        |
+| _              |  sudo                           |
+| afind          |  'ack-grep -il'                 |
+| cd..           |  'cd ..'                        |
+| cd...          |  'cd ../..'                     |
+| cd....         |  'cd ../../..'                  |
+| cd.....        |  'cd ../../../..'               |
+| cd/            |  'cd /'                         |
+| d              |  'dirs -v | head -10'           |
+| history        |  'fc -l 1'                      |
+| l              |  'ls -lah'                      |
+| la             |  'ls -lAh'                      |
+| ll             |  'ls -lh'                       |
+| ls             |  'ls --color     | =tty'        |
+| lsa            |  'ls -lah'                      |
+| md             |  'mkdir -p'                     |
+| please         |  sudo                           |
+| po             |  popd                           |
+| pu             |  pushd                          |
+| rd             |  rmdir                          |
+| rvm-restart    |  'rvm_reload_flag  ...          |
+| sl             |  ls                             |
+| tlog           |  'tail -f log/development.log'  |
+| which-command  |  whence                         |
+
+
+## git aliases
  - https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 
 | Alias         | Command                                                    |
