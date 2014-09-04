@@ -181,3 +181,23 @@ sudo apt-get update
 sudo apt-get install -y elasticsearch
 ```
 
+
+
+------------------------------
+####Notify OSD
+1. Firstly, add Leolik's PPA and upgrade to his patched NotifyOSD:
+```
+sudo add-apt-repository ppa:leolik/leolik
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libnotify-bin
+pkill notify-osd
+```
+
+2. Install NotifyOSDConfig, the GUI used to configure the patched NotifyOSD
+```
+sudo add-apt-repository ppa:amandeepgrewal/notifyosdconfig
+sudo apt-get update
+sudo apt-get install notifyosdconfig
+```
+
