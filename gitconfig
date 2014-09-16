@@ -39,7 +39,12 @@
 [push]
 	default = simple
 [mergetool "kdiff3"]
-	cmd = "kdiff3    -o "
+	cmd = "kdiff3 $LOCAL $REMOTE --output $LOCAL"
+    keepBackup = false
+    trustExitCode = false
+[difftool "kdiff3"]
+    keepBackup = false
+    trustExitCode = false
 [diff]
 	tool = kdiff3
 [merge]

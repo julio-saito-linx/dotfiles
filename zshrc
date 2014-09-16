@@ -1,4 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
+export PATH="$HOME/_git/azk/bin:$PATH"
 
 ZSH_THEME="muse"
 
