@@ -79,6 +79,7 @@ def link_dotfiles
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh 01-new-ubuntu]
   files << "oh-my-zsh/custom/plugins/rbates"
+  files << "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
   files << "oh-my-zsh/custom/rbates.zsh-theme"
 
   files.each do |file|
@@ -110,7 +111,7 @@ end
 
 
 def link_zsh_custom_scripts
-  files = Dir['oh-my-zsh/custom/*.zsh']
+  files = Dir['oh-my-zsh/custom/plugins/*.zsh']
 
   files.each do |file|
     # put a dot before because the destination is on ".oh-my-zsh/", not "oh-my-zsh/"
