@@ -12,4 +12,3 @@ export PATH="/usr/local/bin:$PATH"
 export EDITOR='subl'
 
 source $ZSH/oh-my-zsh.sh
-export PATH="$HOME/_git/azk/bin:$PATH"
