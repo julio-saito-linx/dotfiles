@@ -141,4 +141,3 @@ def link_zsh_custom_scripts
     end
   end
 end
-

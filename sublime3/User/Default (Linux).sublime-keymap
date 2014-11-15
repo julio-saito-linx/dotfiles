@@ -1,3 +1,4 @@
 [
 	{ "keys": ["f12"], "command": "goto_definition" },
+	{ "keys": ["shift+f2"], "command": "rename_path", "args": {"paths": ["$file"]} }
 ]

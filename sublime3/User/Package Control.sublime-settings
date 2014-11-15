@@ -1,23 +1,34 @@
 {
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"Alignment",
 		"Better JavaScript",
+		"Bootstrap 3 Snippets",
 		"DocBlockr",
 		"GitGutter",
 		"Handlebars",
 		"Jade",
+		"JavaScriptNext - ES6 Syntax",
+		"LESS",
 		"MarkdownEditing",
+		"Mocha Snippets",
 		"Monokai Extended",
+		"PackageResourceViewer",
+		"Pretty JSON",
+		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
 		"Stylus",
 		"SublimeLinter",
 		"SublimeLinter-contrib-jslint",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jscs",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"Theme - Soda",
 		"TrailingSpaces",
-		"Vanilla lodash Snippets"
+		"Vanilla lodash Snippets",
+		"Vuejs Snippets"
 	]
 }

@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+
+/******** <  ${1} > ** DEBUG *****------------------------------------------------------*/
+var target = ${1}; var util = require('util'); var scrubbed = util.inspect(target, { showHidden: true, colors: true,
+    depth: 2 }); console.log('\n>>------------------------------------------------------\n' +'  source: ( ' + __filename + ' )' +'\n  ------------------------------------------------------\n' +'  \$ ${1} \n  ------------------------------------------------------\n' + scrubbed +'\n<<------------------------------------------------------\n' );
+/******** </ ${1} > ** DEBUG *****------------------------------------------------------*/
+
+]]></content>
+  <tabTrigger>logs</tabTrigger>
+  <scope>source.js</scope>
+  <description>console.log stringify(...);</description>
+</snippet>

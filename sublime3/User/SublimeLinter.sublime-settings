@@ -11,6 +11,26 @@
 		"lint_mode": "background",
 		"linters":
 		{
+			"htmltidy":
+			{
+				"@disable": true,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"jscs":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"jshint":
 			{
 				"@disable": false,
@@ -33,7 +53,7 @@
 			},
 			"json":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -43,8 +63,9 @@
 				"strict": true
 			}
 		},
-		"mark_style": "solid underline",
+		"mark_style": "squiggly underline",
 		"no_column_highlights_line": false,
+		"passive_warnings": false,
 		"paths":
 		{
 			"linux":
