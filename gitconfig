@@ -25,7 +25,7 @@
     branch = auto
     ui = true
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
     editor = vim
     compression = -1
     autocrlf = input
