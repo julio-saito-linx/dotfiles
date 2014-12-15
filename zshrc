@@ -6,9 +6,9 @@ ZSH_THEME="muse"
 # DISABLE_AUTO_UPDATE="true"
 # DISABLE_LS_COLORS="true"
 
-plugins=(git rbates history-substring-search zsh-syntax-highlighting git-flow)
+plugins=(git rbates history-substring-search zsh-syntax-highlighting git-hubflow)
 
 export PATH="/usr/local/bin:$PATH"
-export EDITOR='subl'
+export EDITOR='subl -n -w'
 
 source $ZSH/oh-my-zsh.sh
