@@ -2,23 +2,17 @@
 #
 # You probably want to change the [user] section here since you are not me.
 
-[hub]
-    protocol = https
 [user]
     name = Julio Makdisse Saito
     email = saitodisse@gmail.com
 [credential]
     helper = cache --timeout=3600000
 [alias]
-    co = checkout
-    promote = !$ZSH_DOTFILES/bin/git-promote
-    wtf     = !$ZSH_DOTFILES/bin/git-wtf
-    rank-contributers = !$ZSH_DOTFILES/bin/git-rank-contributers
-    count   = !git shortlog -sn
-    lc      = !$ZSH_DOTFILES/bin/git-add-rm-line-count
-	g = grep --break --heading --line-number
-	changed = show --pretty=\"format:\" --name-only
-	gi = grep --break --heading --line-number -i
+    co                = checkout
+    count             = !git shortlog -sn
+	g                 = grep --break --heading --line-number
+	changed           = show --pretty=\"format:\" --name-only
+	gi                = grep --break --heading --line-number -i
 [color]
     diff = auto
     status = auto

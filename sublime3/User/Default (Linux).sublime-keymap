@@ -1,4 +1,11 @@
 [
 	{ "keys": ["f12"], "command": "goto_definition" },
-	{ "keys": ["shift+f2"], "command": "rename_path", "args": {"paths": ["$file"]} }
+	{ "keys": ["shift+f2"], "command": "rename_path", "args": {"paths": ["$file"]} },
+	{
+    "keys": ["alt+;"],
+    "command": "tern_select_variable",
+    "context": [
+      {"key": "selector", "operand": "source.js"}
+    ]
+  }
 ]
