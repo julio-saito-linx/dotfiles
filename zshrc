@@ -13,6 +13,7 @@ export PATH="/usr/local/bin:$PATH"
 export EDITOR='subl -n -w'
 
 source $ZSH/oh-my-zsh.sh
+source ~/.nvm/nvm.sh
 
 
 
