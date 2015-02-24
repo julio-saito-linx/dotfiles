@@ -1,20 +1,20 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"Alignment",
-		"Bootstrap 3 Snippets",
-		"DocBlockr",
 		"GitGutter",
-		"Handlebars",
-		"Jade",
+		"JavaScript Snippets",
 		"JavaScriptNext - ES6 Syntax",
-		"LESS",
 		"MarkdownEditing",
 		"Mocha Snippets",
 		"Monokai Extended",
+		"Package Control",
 		"PackageResourceViewer",
 		"Pretty JSON",
+		"ReactJS",
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
@@ -25,6 +25,7 @@
 		"SublimeLinter-jscs",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
+		"SublimeLinter-jsxhint",
 		"Theme - Soda",
 		"TrailingSpaces",
 		"Vanilla lodash Snippets",
