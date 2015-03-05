@@ -11,9 +11,16 @@ plugins=(git rbates history-substring-search zsh-syntax-highlighting git-flow)
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='subl -n -w'
+export LESS='-RXF'
 
 source $ZSH/oh-my-zsh.sh
 source ~/.nvm/nvm.sh
+
+# Man page configure
+if [[ -f "$(which most 2> /dev/null)" ]]; then
+    export MANPAGER="$(which most) -s"
+fi
+
 
 
 
