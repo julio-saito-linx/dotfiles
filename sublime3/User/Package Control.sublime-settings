@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"DocBlockr",
 		"GitGutter",
 		"JavaScript Snippets",
 		"JavaScriptNext - ES6 Syntax",

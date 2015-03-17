@@ -1,11 +1,6 @@
 <snippet>
-  <content><![CDATA[// ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
-console.log('\n>>---------\n ${1}:');
-console.log(require('util').inspect(${1},
-  { showHidden:false, colors:true }));
-console.log('\n>>---------\n');
-// ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ]]></content>
-  <tabTrigger>log</tabTrigger>
+  <content><![CDATA[/**/require('azk-core').dlog(${1}, "${1}");/*-debug-*/]]></content>
+  <tabTrigger>dlog</tabTrigger>
   <scope>source.js</scope>
-  <description>console - inspect;</description>
+  <description>dlog: console.log + inspect</description>
 </snippet>

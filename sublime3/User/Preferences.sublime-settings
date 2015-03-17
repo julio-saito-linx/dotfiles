@@ -11,10 +11,15 @@
 		}
 	],
 	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
-	"font_size": 14,
 	"font_face": "Source Code Pro",
+	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
 	"preview_on_click": false,
 	"remember_open_files": false,
 	"soda_classic_tabs": true,

@@ -2,7 +2,6 @@
 	"extensions":
 	[
 		"jsx",
-		"json",
-		"js"
+		"json"
 	]
 }

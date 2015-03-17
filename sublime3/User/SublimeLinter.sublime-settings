@@ -23,7 +23,7 @@
 			},
 			"jscs":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -33,7 +33,7 @@
 			},
 			"jshint":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -64,7 +64,7 @@
 			},
 			"jsxhint":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -73,7 +73,7 @@
 				]
 			}
 		},
-		"mark_style": "stippled underline",
+		"mark_style": "fill",
 		"no_column_highlights_line": false,
 		"passive_warnings": false,
 		"paths":
