@@ -11,20 +11,10 @@
 		}
 	],
 	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
-	"font_size": 13,
+	"font_size": 14,
+	"font_face": "Source Code Pro",
 	"highlight_line": true,
 	"hot_exit": false,
-	"ignored_packages":
-	[
-		"JavaScript",
-		"Vintage",
-		"Markdown"
-	],
-	"index_exclude_patterns":
-	[
-		"/home/julio/_git/azk/lib*",
-		"*.log"
-	],
 	"preview_on_click": false,
 	"remember_open_files": false,
 	"soda_classic_tabs": true,
