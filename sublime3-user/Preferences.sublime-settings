@@ -17,6 +17,9 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Handlebars",
+		"JavaScript",
+		"LESS",
 		"Markdown",
 		"Vintage"
 	],

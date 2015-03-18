@@ -77,7 +77,7 @@ end
 
 def link_dotfiles
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh 01-new-ubuntu]
+  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh 01-new-ubuntu sublime3-user]
   files << "oh-my-zsh/custom/plugins/rbates"
   files << "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
   files << "oh-my-zsh/custom/rbates.zsh-theme"

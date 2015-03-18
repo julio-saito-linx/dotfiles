@@ -10,8 +10,9 @@ rake install
 
 #### sublime 3 configurations
 ```shell
-cd ~/_git/dotfiles/sublime3
-./install.sh
+mkdir -p /home/$USER/.config/sublime-text-3/Packages
+rm -rf /home/$USER/.config/sublime-text-3/Packages/User
+ln -sf `pwd`/sublime3-user /home/$USER/.config/sublime-text-3/Packages/User
 ```
 
 
