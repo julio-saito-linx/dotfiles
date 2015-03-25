@@ -1,0 +1,17 @@
+"*":
+  "exception-reporting":
+    userId: "29e05f29-2523-a138-a047-74dc8aa070e6"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "dark-flat-ui"
+      "monokai-dark"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Source Code Pro"
+    fontSize: 18
+  linter: {}
+  "atom-alignment": {}
+  "highlight-selected": {}

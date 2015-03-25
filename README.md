@@ -12,7 +12,14 @@ rake install
 ```shell
 mkdir -p /home/$USER/.config/sublime-text-3/Packages
 rm -rf /home/$USER/.config/sublime-text-3/Packages/User
-ln -sf `pwd`/sublime3-user /home/$USER/.config/sublime-text-3/Packages/User
+ln -sf `pwd`/sublime3-user /home/$USER/.config/sublime-text-3/Packages/
+```
+
+#### atom configurations
+```shell
+mkdir -p /home/$USER/.atom
+rm -rf /home/$USER/.atom
+ln -sf `pwd`/.atom /home/$USER/
 ```
 
 
