@@ -1,4 +1,4 @@
 '.source.js':
   'console.log':
-    'prefix': 'dl'
+    'prefix': 'zzzz'
     'body': '/**/require(\'azk-core\').dlog(${1:"XXX"}, "${1:"XXX"}", null);/*-debug-*/'

@@ -11,7 +11,10 @@
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
-    fontSize: 18
+    fontSize: 19
   linter: {}
   "atom-alignment": {}
   "highlight-selected": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+    enableAutoActivation: false
