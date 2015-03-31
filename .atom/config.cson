@@ -8,10 +8,11 @@
       "dark-flat-ui"
       "monokai-dark"
     ]
+    projectHome: "/home/julio/_git"
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
-    fontSize: 19
+    fontSize: 18
   linter: {}
   "atom-alignment": {}
   "highlight-selected": {}
