@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-export PATH="$HOME/_git/azk/bin:$PATH"
+export PATH="$HOME/_git/azuki/azk/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
 
 ZSH_THEME="muse"
@@ -7,7 +7,7 @@ ZSH_THEME="muse"
 # DISABLE_AUTO_UPDATE="true"
 # DISABLE_LS_COLORS="true"
 
-plugins=(git rbates history-substring-search zsh-syntax-highlighting git-flow)
+plugins=(git rbates history-substring-search zsh-syntax-highlighting)
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='subl -n -w'

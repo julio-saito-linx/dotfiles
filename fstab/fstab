@@ -1,0 +1,53 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system>                           <mount point>     <type>  <options>                 <dump>  <pass>
+
+UUID=fcda7a36-f4f7-46d6-a3b2-69e42afcc2cc  /                ext4    rw,relatime,data=ordered  0       1
+UUID=05c83927-8cbb-4bec-9118-ed930152c1e9  /boot            ext4    rw,relatime,data=ordered  0       2
+UUID=a46da915-3972-4aed-a288-e3fe503a5fb1  /home            ext4    rw,relatime,data=ordered  0       2
+UUID=b1c509ce-166d-4b92-aadb-fbf30e380536  none             swap    sw                        0       0
+UUID=bfd7bc69-79bc-4b52-a65c-1909280668bf	 /var/lib/docker	ext4	  defaults	                0	      2
+
+## /dev/mapper/fedora-root: UUID="fcda7a36-f4f7-46d6-a3b2-69e42afcc2cc" TYPE="ext4"
+## /dev/mapper/fedora-swap: UUID="b1c509ce-166d-4b92-aadb-fbf30e380536" TYPE="swap"
+## /dev/mapper/fedora-home: UUID="a46da915-3972-4aed-a288-e3fe503a5fb1" TYPE="ext4"
+## /dev/sdc2: UUID="05c83927-8cbb-4bec-9118-ed930152c1e9" TYPE="ext4" PARTUUID="9cdaf8fe-02"
+## /dev/sde1: UUID="b424a306-535b-4d65-b895-c7e6793fabfc" TYPE="ext2" PTTYPE="dos" PARTUUID="f51b24bf-01"
+## /dev/sde5: UUID="ed33fc79-7f1e-4558-b50b-fc9933e2f0e7" TYPE="ext4" PARTUUID="f51b24bf-05"
+## /dev/sde6: UUID="8642d1d1-0953-4238-9f1b-1106052716ec" TYPE="ext4" PARTUUID="f51b24bf-06"
+## /dev/loop0: UUID="cc73bce3-2367-43c0-be8e-e5c730336b6e" TYPE="ext4"
+## /dev/mapper/docker-253:0-2892594-pool: UUID="cc73bce3-2367-43c0-be8e-e5c730336b6e" TYPE="ext4"
+##
+##
+## /dev/mapper/fedora-root / ext4 rw,relatime,data=ordered 0 0
+## /dev/sdc2 /boot ext4 rw,relatime,data=ordered 0 0
+## /dev/mapper/fedora-home /home ext4 rw,relatime,data=ordered 0 0
+## /dev/mapper/fedora-root /home/julio/var_lib_docker ext4 rw,relatime,data=ordered 0 0
+## /dev/mapper/fedora-root: UUID="fcda7a36-f4f7-46d6-a3b2-69e42afcc2cc" TYPE="ext4"
+## /dev/mapper/fedora-swap: UUID="b1c509ce-166d-4b92-aadb-fbf30e380536" TYPE="swap"
+## /dev/mapper/fedora-home: UUID="a46da915-3972-4aed-a288-e3fe503a5fb1" TYPE="ext4"
+##
+##
+## # EXEMPLO DO NOTEBOOK
+## # / was on /dev/sda7 during installation
+## UUID=fe42cc93-1b9b-463f-927d-64653813d5db /               ext4    errors=remount-ro 0       1
+##
+## # /boot was on /dev/sda10 during installation
+## UUID=d5757e2f-7760-4a6b-8959-99af06c23606 /boot           ext2    defaults        0       2
+##
+## # /boot/efi was on /dev/sda2 during installation
+## #UUID=145D-ECAB  /boot/efi       vfat    defaults        0       1
+##
+## # /home was on /dev/sda9 during installation
+## UUID=6ba80327-913d-4154-af03-42b964b4e08c /home           ext4    defaults        0       2
+##
+## # swap was on /dev/sda8 during installation
+## UUID=1ec3cee3-cef1-4387-accd-0a6ceca6803c none            swap    sw              0       0
+## UUID=145D-ECAB	/boot/efi	vfat	defaults	0	1
+##
+## UUID=42beca91-a3b9-4278-92e8-200267f2eecf	/var/lib/docker	ext4	defaults	0	2
+##

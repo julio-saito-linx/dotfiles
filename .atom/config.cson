@@ -9,13 +9,18 @@
       "monokai-dark"
     ]
     projectHome: "/home/julio/_git"
+    disabledPackages: [
+      "linter-jscs"
+    ]
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
-    fontSize: 18
+    fontSize: 17
   linter: {}
   "atom-alignment": {}
   "highlight-selected": {}
   "autocomplete-plus":
-    confirmCompletion: "tab and enter"
-    enableAutoActivation: false
+    autoActivationDelay: 300
+    maxVisibleSuggestions: 5
+    confirmCompletion: "enter"
+  "spell-check": {}

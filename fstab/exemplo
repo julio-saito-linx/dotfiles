@@ -1,0 +1,50 @@
+Re: rebuild fstab
+dan@dan-Not:~$ sudo blkid
+[sudo] password for dan:
+/dev/sda1: LABEL="EFI" UUID="3F3C-1AF6" TYPE="vfat"
+/dev/sda2: UUID="83062D46C78FDD33" LABEL="Macintosh HD" TYPE="hfsplus"
+/dev/sda3: UUID="9A1C07811C075821" TYPE="ntfs"
+/dev/sda4: UUID="58e05acc-a255-48c7-ac8a-acbf5a7764c9" TYPE="ext3"
+/dev/sda5: TYPE="swap" UUID="dc91869f-897e-47d1-a472-98551ae03fa5"
+
+
+dan@dan-Not:~$ cat /etc/mtab
+/dev/sda4 / ext3 rw,relatime,errors=remount-ro 0 0
+tmpfs /lib/init/rw tmpfs rw,nosuid,mode=0755 0 0
+proc /proc proc rw,noexec,nosuid,nodev 0 0
+sysfs /sys sysfs rw,noexec,nosuid,nodev 0 0
+varrun /var/run tmpfs rw,nosuid,mode=0755 0 0
+varlock /var/lock tmpfs rw,noexec,nosuid,nodev,mode=1777 0 0
+udev /dev tmpfs rw,mode=0755 0 0
+tmpfs /dev/shm tmpfs rw,nosuid,nodev 0 0
+devpts /dev/pts devpts rw,noexec,nosuid,gid=5,mode=620 0 0
+fusectl /sys/fs/fuse/connections fusectl rw 0 0
+lrm /lib/modules/2.6.28-17-generic/volatile tmpfs rw,mode=755 0 0
+securityfs /sys/kernel/security securityfs rw 0 0
+binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,noexec,nosuid,nodev 0 0
+gvfs-fuse-daemon /home/dan/.gvfs fuse.gvfs-fuse-daemon rw,nosuid,nodev,user=dan 0 0
+
+thanks for the quick response and how would I go about a backup? just simply copy the contents of the file to a fstab.old?
+Advanced reply Adv Reply
+December 23rd, 2009 #4 geirha  geirha is offline
+Ubuntu addict and loving it
+
+Join Date
+Feb 2007
+Beans
+4,045
+Distro
+Ubuntu 9.10 Karmic Koala
+Re: rebuild fstab
+This should be close to what you had before:
+Code:
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+proc            /proc           proc    defaults        0       0
+# /dev/sda4
+UUID=58e05acc-a255-48c7-ac8a-acbf5a7764c9 / ext3 relatime,errors=remount-ro 0 1
+# /dev/sda5
+UUID=dc91869f-897e-47d1-a472-98551ae03fa5 none swap defaults 0 0
+/dev/scd0 /media/cdrom0 udf,iso9660 user,noauto,exec,utf8 0 0
+Backing up /etc and /home is a good idea. This explains some different ways to back up: https://help.ubuntu.com/community/BackupYourSystem
