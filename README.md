@@ -25,7 +25,7 @@ http://www.if-not-true-then-false.com/2012/install-skype-on-fedora-centos-red-ha
 
 http://www.if-not-true-then-false.com/2010/install-google-chrome-with-yum-on-fedora-red-hat-rhel/
 
-#### Oracle JAVA 8
+#### Oracle JAVA JDK 8
 
 http://www.if-not-true-then-false.com/2014/install-oracle-java-8-on-fedora-centos-rhel/
 
