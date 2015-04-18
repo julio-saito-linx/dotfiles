@@ -1,27 +1,96 @@
 
-# saitodisse's "Ryan Bates Dot Files" fork #
+# saitodisse dotfiles and Fedora 21
 
-## Instalation
-```shell
-git clone git@github.com:saitodisse/dotfiles.git ~/_git/dotfiles
-cd ~/_git/dotfiles
-rake install
+dotfiles
+=========
+
+```
+./install.sh
 ```
 
-#### sublime 3 configurations
-```shell
-mkdir -p /home/$USER/.config/sublime-text-3/Packages
-rm -rf /home/$USER/.config/sublime-text-3/Packages/User
-ln -sf `pwd`/sublime3-user /home/$USER/.config/sublime-text-3/Packages/
+Fedora 21
+=========
+
+#### update system
+
+```
+sudo yum -y update
 ```
 
-#### atom configurations
-```shell
-mkdir -p /home/$USER/.atom
-rm -rf /home/$USER/.atom
-ln -sf `pwd`/.atom /home/$USER/
+#### Skype
+
+http://www.if-not-true-then-false.com/2012/install-skype-on-fedora-centos-red-hat-rhel-scientific-linux-sl/
+
+#### Google chrome
+
+http://www.if-not-true-then-false.com/2010/install-google-chrome-with-yum-on-fedora-red-hat-rhel/
+
+#### Oracle JAVA 8
+
+http://www.if-not-true-then-false.com/2014/install-oracle-java-8-on-fedora-centos-rhel/
+
+#### ATOM
+
+https://atom.io/download/rpm
+
+#### git
+
+```
+sudo yum -y install git gitk xclip
+
+git config --global --add color.ui true
+git config --global user.name 'Julio Makdisse Saito'
+git config --global user.email 'saitodisse@gmail.com'
+git config --global push.default simple
+ssh-keygen -t rsa -C "saitodisse@gmail.com"
+
+ssh-add ~/.ssh/id_rsa
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
 ```
 
+  - https://github.com/settings/ssh
+  - https://bitbucket.org/account/user/saitodisse/ssh-keys/
+
+test:
+```
+ssh -T git@github.com
+```
+
+##### clone repos
+```
+git clone git@github.com:saitodisse/azk.git
+```
+
+#### nvm
+
+https://github.com/creationix/nvm#install-script
+
+#### azk
+
+http://docs.azk.io/pt-BR/installation/linux.html
+
+#### brtfs
+
+```
+sudo su
+...
+yum install -y btrfs-progs
+lvcreate -L 50GB -n docker fedora
+mkfs.btrfs /dev/fedora/docker
+echo '/dev/mapper/fedora-docker /var/lib/docker                   btrfs    defaults        1 2' >> /etc/fstab
+```
+
+#### source-code-pro font
+
+```
+cd /tmp
+wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.zip
+unzip 1.017R.zip
+mkdir -p ~/.fonts
+cp source-code-pro-1.017R/OTF/*.otf ~/.fonts/
+fc-cache -f -v
+```
 
 ## [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh) sheet cheats
 

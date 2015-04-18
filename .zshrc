@@ -1,16 +1,15 @@
 export ZSH=$HOME/.oh-my-zsh
-export PATH="$HOME/_git/azk/bin:$PATH"
-export PATH="./node_modules/.bin:$PATH"
 
 ZSH_THEME="muse"
-
-# DISABLE_AUTO_UPDATE="true"
-# DISABLE_LS_COLORS="true"
-
 plugins=(git rbates history-substring-search zsh-syntax-highlighting)
 
 export PATH="/usr/local/bin:$PATH"
-export EDITOR='subl -n -w'
+export PATH="$HOME/_git/azk/bin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
+export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
+export AZK_KEEN_PROJECT_ID=5526968d672e6c5a0d0ebec6 AZK_KEEN_WRITE_KEY=5dbce13e376070e36eec0c7dd1e7f42e49f39b4db041f208054617863832309c14a797409e12d976630c3a4b479004f26b362506e82a46dd54df0c977a7378da280c05ae733c97abb445f58abb56ae15f561ac9ad774cea12c3ad8628d896c39f6e702f6b035541fc1a562997cb05768
+export ANALYTICS_DATA=2 ANALYTICS_ERRORS=1
+export EDITOR='atom'
 export LESS='-RXF'
 
 source $ZSH/oh-my-zsh.sh
@@ -20,9 +19,6 @@ source ~/.nvm/nvm.sh
 if [[ -f "$(which most 2> /dev/null)" ]]; then
     export MANPAGER="$(which most) -s"
 fi
-
-
-
 
 # A shortcut function that simplifies usage of xclip.
 # - Accepts input from either stdin (pipe), or params.
@@ -73,6 +69,3 @@ alias cbwd="pwd | cb"
 
 # Copy most recent command in bash history
 alias cbhs="cat $HISTFILE | tail -n 1 | cb"
-export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
-export AZK_KEEN_PROJECT_ID=5526968d672e6c5a0d0ebec6 AZK_KEEN_WRITE_KEY=5dbce13e376070e36eec0c7dd1e7f42e49f39b4db041f208054617863832309c14a797409e12d976630c3a4b479004f26b362506e82a46dd54df0c977a7378da280c05ae733c97abb445f58abb56ae15f561ac9ad774cea12c3ad8628d896c39f6e702f6b035541fc1a562997cb05768
-export ANALYTICS_DATA=2 ANALYTICS_ERRORS=1
