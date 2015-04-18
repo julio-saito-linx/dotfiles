@@ -87,6 +87,28 @@ cp source-code-pro-1.017R/OTF/*.otf ~/.fonts/
 fc-cache -f -v
 ```
 
+### Tools
+
+```
+sudo yum install vlc -y
+
+sudo curl https://yt-dl.org/downloads/2015.04.17/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+x /usr/local/bin/youtube-dl
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh) sheet cheats
 
 ### ZSH
