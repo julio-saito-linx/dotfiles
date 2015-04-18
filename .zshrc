@@ -20,6 +20,15 @@ if [[ -f "$(which most 2> /dev/null)" ]]; then
     export MANPAGER="$(which most) -s"
 fi
 
+
+
+
+
+
+
+
+
+
 # A shortcut function that simplifies usage of xclip.
 # - Accepts input from either stdin (pipe), or params.
 # http://madebynathan.com/2011/10/04/a-nicer-way-to-use-xclip/

@@ -38,19 +38,14 @@ https://atom.io/download/rpm
 ```
 sudo yum -y install git gitk xclip
 
-git config --global --add color.ui true
-git config --global user.name 'Julio Makdisse Saito'
-git config --global user.email 'saitodisse@gmail.com'
-git config --global push.default simple
 ssh-keygen -t rsa -C "saitodisse@gmail.com"
 
 ssh-add ~/.ssh/id_rsa
 xclip -sel clip < ~/.ssh/id_rsa.pub
-
 ```
 
-  - https://github.com/settings/ssh
-  - https://bitbucket.org/account/user/saitodisse/ssh-keys/
+- https://github.com/settings/ssh
+- https://bitbucket.org/account/user/saitodisse/ssh-keys/
 
 test:
 ```
