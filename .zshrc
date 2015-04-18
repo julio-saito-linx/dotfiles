@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-export PATH="$HOME/_git/azuki/azk/bin:$PATH"
+export PATH="$HOME/_git/azk/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
 
 ZSH_THEME="muse"
