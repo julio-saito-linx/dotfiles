@@ -5,7 +5,7 @@
     showOnStartup: false
   core:
     themes: [
-      "dark-flat-ui"
+      "atom-dark-ui"
       "monokai-dark"
     ]
     projectHome: "/home/julio/_git"
@@ -15,7 +15,7 @@
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
-    fontSize: 17
+    fontSize: 18
   linter: {}
   "atom-alignment": {}
   "highlight-selected": {}
