@@ -6,9 +6,9 @@
 
   'console.log.simple':
     'prefix': 'll'
-    'body': '/**/console.log(\'\\n>>---------\\n ${1}:\\n\', ${1}, \'\\n>>---------\\n\');/*-debug-*/'
+    'body': '/**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\', ${1}, \'\\\\n>>---------\\\\n\');/*-debug-*/'
 
   'console.log.util.inspect':
     'prefix': 'lll'
-    'body': '/**/console.log(\'\\n>>---------\\n ${1}:\\n\',
-             require(\'util\').inspect(${1}, { showHidden: false, depth: null, colors: true }), \'\\n>>---------\\n\');/*-debug-*/'
+    'body': '/**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\',
+             require(\'util\').inspect(${1}, { showHidden: false, depth: null, colors: true }), \'\\\\n>>---------\\\\n\');/*-debug-*/'
