@@ -1,11 +1,14 @@
-.DS_Store
-.svn
-*~
+._*
+.*.sw[plo]
 .*.swp
+.DS_Store
+.env
+.rvmrc
+.srclib-cache/
+.svn
+*.DS_Store
 *.sublime-project
 *.sublime-workspace
-.env
-
-
-# srclib build cache
-.srclib-cache/
+**/.env
+*~
+*privkey.asc
