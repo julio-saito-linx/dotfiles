@@ -9,6 +9,9 @@ ln -s "$PWD/.zshrc" "$HOME/.zshrc"
 rm -rf "$HOME/.gitignore"
 ln -s "$PWD/gitignore" "$HOME/.gitignore"
 
+rm -rf "$HOME/.npmignore"
+ln -s "$PWD/.npmignore" "$HOME/.npmignore"
+
 rm -rf "$HOME/.gitconfig"
 ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
 

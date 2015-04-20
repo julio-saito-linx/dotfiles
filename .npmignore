@@ -1,0 +1,10 @@
+*.DS_Store
+.DS_Store
+.rvmrc
+.env
+**/.env
+.*.sw[plo]
+._*
+*.sublime-workspace
+*.sublime-project
+*privkey.asc
