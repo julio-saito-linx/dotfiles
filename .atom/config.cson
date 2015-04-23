@@ -15,7 +15,7 @@
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
-    fontSize: 18
+    fontSize: 17
   linter: {}
   "atom-alignment": {}
   "highlight-selected": {}
@@ -24,3 +24,4 @@
     maxVisibleSuggestions: 5
     confirmCompletion: "enter"
   "spell-check": {}
+  "markdown-preview": {}

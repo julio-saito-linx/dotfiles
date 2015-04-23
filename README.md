@@ -96,6 +96,15 @@ sudo curl https://yt-dl.org/downloads/2015.04.17/youtube-dl -o /usr/local/bin/yo
 sudo chmod a+x /usr/local/bin/youtube-dl
 ```
 
+#### alttab
+
+- https://ask.fedoraproject.org/en/question/28819/is-there-a-way-to-make-alttab-only-see-the-current-workspace/
+
+```
+sudo yum install gnome-shell-extension-alternate-tab
+firefox https://extensions.gnome.org/local/
+```
+
 
 
 
