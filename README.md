@@ -253,6 +253,25 @@ curl -Ls http://azk.io/install.sh | bash
 
 ------------------------------
 
+#### pulse-audio default config
+
+```sh
+# find your best card and sink
+pacmd list
+
+# edit pulse config file
+sudo atom /etc/pulse/default.pa
+```
+
+```sh
+#..
+#..
+set-card-profile 2 output:analog-stereo
+set-default-sink 6
+```
+
+------------------------------
+
 ## Extras
 
 #### Notify OSD
