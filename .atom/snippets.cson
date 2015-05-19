@@ -4,6 +4,10 @@
 #
 '.source.js':
 
+  'console.log.verySimple':
+    'prefix': 'l'
+    'body': '/**/console.log(\'\\\\n%% ${1} \\\\n\');/*-debug-*/'
+
   'console.log.simple':
     'prefix': 'll'
     'body': '/**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\', ${1}, \'\\\\n>>---------\\\\n\');/*-debug-*/'

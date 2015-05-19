@@ -16,7 +16,10 @@
     invisibles: {}
     fontFamily: "Source Code Pro"
     fontSize: 17
-  linter: {}
+  linter:
+    subtleLinterErrors: [
+      "jshint"
+    ]
   "atom-alignment": {}
   "highlight-selected": {}
   "autocomplete-plus":
@@ -26,3 +29,7 @@
   "spell-check": {}
   "markdown-preview": {}
   react: {}
+  tasks:
+    completeMarker: "- [x]"
+    baseMarker: "- [ ]"
+    cancelledMarker: "[ cancelled ]"
