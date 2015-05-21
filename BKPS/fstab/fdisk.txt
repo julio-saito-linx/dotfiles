@@ -1,0 +1,90 @@
+
+Disk /dev/sda: 1500.3 GB, 1500301910016 bytes
+256 heads, 63 sectors/track, 181688 cylinders, total 2930277168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x1e3fbf51
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1               1  4294967295  2147483647+  ee  GPT
+
+Disk /dev/sdc: 1000.2 GB, 1000204886016 bytes
+255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x9cdaf8fe
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdc1   *        2048      718847      358400    7  HPFS/NTFS/exFAT
+/dev/sdc2          718848  1024002047   511641600    7  HPFS/NTFS/exFAT
+/dev/sdc3      1024002048  1953519615   464758784    7  HPFS/NTFS/exFAT
+
+Disk /dev/sdd: 2000.4 GB, 2000398934016 bytes
+255 heads, 63 sectors/track, 243201 cylinders, total 3907029168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disk identifier: 0xda8063ce
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdd1   *        2048  3907026943  1953512448    7  HPFS/NTFS/exFAT
+
+Disk /dev/sde: 1000.2 GB, 1000204886016 bytes
+255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x85860261
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sde1   *        2048     1026047      512000   83  Linux
+/dev/sde2         1026048   751732735   375353344   8e  Linux LVM
+/dev/sde3       751734782  1383671807   315968513    5  Extended
+/dev/sde5       751734784  1367588863   307927040   83  Linux
+/dev/sde6      1367590912  1383671807     8040448   82  Linux swap / Solaris
+
+Disk /dev/sdf: 2000.4 GB, 2000398934016 bytes
+255 heads, 63 sectors/track, 243201 cylinders, total 3907029168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0xe8ad2d70
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdf1   *        2048  3907026943  1953512448    7  HPFS/NTFS/exFAT
+
+Disk /dev/sdb: 1500.3 GB, 1500301910016 bytes
+255 heads, 63 sectors/track, 182401 cylinders, total 2930277168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x6782b910
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *        2048  2930276351  1465137152    7  HPFS/NTFS/exFAT
+
+Disk /dev/mapper/fedora00-root: 53.7 GB, 53687091200 bytes
+255 heads, 63 sectors/track, 6527 cylinders, total 104857600 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+
+Disk /dev/mapper/fedora00-home: 322.2 GB, 322206433280 bytes
+255 heads, 63 sectors/track, 39172 cylinders, total 629309440 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+
+Disk /dev/mapper/fedora00-swap: 8455 MB, 8455716864 bytes
+255 heads, 63 sectors/track, 1028 cylinders, total 16515072 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
