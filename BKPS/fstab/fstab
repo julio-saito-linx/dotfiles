@@ -10,3 +10,10 @@ UUID=88a4424e-1be3-40c1-9b2b-fd9c13a33706 /               ext4    errors=remount
 /dev/mapper/fedora00-swap none            swap    sw              0       0
 # swap was on /dev/sde6 during installation
 UUID=344b6fca-180d-49c1-abe2-9d6f75622a71 none            swap    sw              0       0
+
+# windows mounts
+UUID=184C5D684C5D4224                     /mnt/Files      ntfs-3g    uid=1000,gid=1000,dmask=027,fmask=137  0   0
+UUID=368E894A8E890419                     /mnt/2GB        ntfs-3g    uid=1000,gid=1000,dmask=027,fmask=137  0   0
+UUID=F66C98B96C987659                     /mnt/MP3_2      ntfs-3g    uid=1000,gid=1000,dmask=027,fmask=137  0   0
+UUID=0A94A20794A1F4FB                     /mnt/Movies1    ntfs-3g    uid=1000,gid=1000,dmask=027,fmask=137  0   0
+UUID=4222DA8C22DA8477                     /mnt/Movies2    ntfs-3g    uid=1000,gid=1000,dmask=027,fmask=137  0   0
