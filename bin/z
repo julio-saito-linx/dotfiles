@@ -1,0 +1,3 @@
+#!/bin/bash
+
+terminator -m -T 'azk (z1, z2, z3)' -l azk

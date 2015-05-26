@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tail -f ~/.azk/data/logs/azk.log | sed -n '/\[postal\]/p' & tail -f ~/.azk/data/logs/azk_test.log | sed -n '/\[postal\]/p'

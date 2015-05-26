@@ -1,0 +1,67 @@
+[global_config]
+  enabled_plugins = APTURLHandler, LaunchpadCodeURLHandler, LaunchpadBugURLHandler
+  inactive_color_offset = 1.0
+[keybindings]
+  broadcast_all = <Primary><Shift><Alt>b
+  reset_clear = <Primary>g
+  broadcast_off = <Primary><Shift><Alt>o
+[profiles]
+  [[default]]
+    scrollback_lines = 5000
+    font = Source Code Pro Medium 13
+    use_system_font = False
+    split_to_group = True
+    background_image = None
+  [[pequeno]]
+    background_image = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[azk]]
+    [[[child0]]]
+      position = 0:24
+      type = Window
+      order = 0
+      parent = ""
+      size = 1440, 876
+    [[[child1]]]
+      position = 226
+      type = VPaned
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 114
+      type = VPaned
+      order = 0
+      parent = child1
+    [[[child3]]]
+      position = 720
+      type = HPaned
+      order = 0
+      parent = child2
+    [[[terminal5]]]
+      profile = pequeno
+      type = Terminal
+      order = 1
+      parent = child3
+    [[[terminal4]]]
+      profile = pequeno
+      type = Terminal
+      order = 0
+      parent = child3
+    [[[terminal7]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child1
+    [[[terminal6]]]
+      profile = pequeno
+      type = Terminal
+      order = 1
+      parent = child2
+[plugins]

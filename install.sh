@@ -15,6 +15,9 @@ ln -s "$PWD/.npmignore" "$HOME/.npmignore"
 rm -rf "$HOME/.gitconfig"
 ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
 
+rm -rf "$HOME/.config/terminator/config"
+ln -s "$PWD/.terminator_config" "$HOME/.config/terminator/config"
+
 
 # vim configs
 
