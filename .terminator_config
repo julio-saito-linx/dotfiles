@@ -7,11 +7,12 @@
   broadcast_off = <Primary><Shift><Alt>o
 [profiles]
   [[default]]
+    background_image = None
     scrollback_lines = 5000
-    font = Source Code Pro Medium 13
     use_system_font = False
     split_to_group = True
-    background_image = None
+    scroll_on_output = False
+    font = Source Code Pro Medium 13
   [[pequeno]]
     background_image = None
 [layouts]

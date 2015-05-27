@@ -1,7 +1,0 @@
-#!/bin/bash
-
-export AZK_LOG_LEVEL=debug
-export AZK_SUBSCRIBE_POSTAL=#
-
-cd ~/_git/azk
-./bin/azk agent start --no-daemon
