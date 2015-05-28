@@ -78,7 +78,7 @@ function mazk() {
 # azk lauchers
 
   ## azk dev
-function azkatom() {
+function azk_atom() {
   exec_and_log cd ~/_git/azk
   exec_and_log atom ~/_git/azk
 }
@@ -100,7 +100,7 @@ function z3_tail_sed_azk_log_files() {
 }
 
   ## master azk
-function mazkatom() {
+function mazk_atom() {
   exec_and_log cd ~/_git/master-azk
   exec_and_log atom ~/_git/master-azk
 }
@@ -113,4 +113,14 @@ function mz1_azk_start_agent() {
 function mz2_azk_nvm_gulp_watch() {
   exec_and_log cd ~/_git/master-azk
   exec_and_log ./bin/azk nvm gulp watch
+}
+
+  ## utilitários
+function todo_atom() {
+  exec_and_log cd ~/_git/todolist.md
+  exec_and_log atom ~/_git/todolist.md
+}
+function dotfiles_atom() {
+  exec_and_log cd ~/_git/dotfiles
+  exec_and_log atom ~/_git/dotfiles
 }
