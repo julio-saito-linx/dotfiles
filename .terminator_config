@@ -8,12 +8,14 @@
 [profiles]
   [[default]]
     background_image = None
-    scrollback_lines = 5000
+    scrollback_lines = 50000
     use_system_font = False
     split_to_group = True
     scroll_on_output = False
     font = Source Code Pro Medium 13
   [[pequeno]]
+    scrollback_lines = 50000
+    scroll_on_output = False
     background_image = None
 [layouts]
   [[default]]

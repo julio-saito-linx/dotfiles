@@ -33,3 +33,4 @@
     completeMarker: "- [x]"
     baseMarker: "- [ ]"
     cancelledMarker: "[ cancelled ]"
+  "merge-conflicts": {}
