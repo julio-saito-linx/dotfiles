@@ -64,7 +64,7 @@ function exec_and_log() {
 # azk "ALIASES"
 
 function bazk() {
-  log yellow "using ~/_git/master-azk/bin/azk";
+  log yellow "using /usr/bin/azk";
   /usr/bin/azk $@;
 }
 

@@ -15,7 +15,7 @@
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
-    fontSize: 17
+    fontSize: 18
   linter:
     subtleLinterErrors: [
       "jshint"
