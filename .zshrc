@@ -34,6 +34,7 @@ export AZK_LOG_LEVEL=debug
 export AZK_SUBSCRIBE_POSTAL=#
 export AZK_OUTPUT_LOG_LEVEL=warn
 export AZK_LOG_LEVEL=info
+export BLUEBIRD_DEBUG=1
 
 # enable my azk functions
 source $HOME/_git/dotfiles/bin/my_azk_functions.sh
