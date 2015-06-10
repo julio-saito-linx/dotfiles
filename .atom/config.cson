@@ -16,6 +16,7 @@
   linter:
     subtleLinterErrors: [
       "jshint"
+      "jscs"
     ]
   "atom-alignment": {}
   "highlight-selected": {}
