@@ -32,6 +32,8 @@ export AZK_KEEN_WRITE_KEY=5dbce13e376070e36eec0c7dd1e7f42e49f39b4db041f208054617
 # configure azk dev envs
 export AZK_LOG_LEVEL=debug
 export AZK_SUBSCRIBE_POSTAL=#
+export AZK_OUTPUT_LOG_LEVEL=warn
+export AZK_LOG_LEVEL=info
 
 # enable my azk functions
 source $HOME/_git/dotfiles/bin/my_azk_functions.sh

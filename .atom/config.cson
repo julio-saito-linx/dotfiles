@@ -9,9 +9,6 @@
       "monokai-dark"
     ]
     projectHome: "/home/julio/_git"
-    disabledPackages: [
-      "linter-jscs"
-    ]
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
@@ -34,3 +31,4 @@
     baseMarker: "- [ ]"
     cancelledMarker: "[ cancelled ]"
   "merge-conflicts": {}
+  "git-blame-plus": {}

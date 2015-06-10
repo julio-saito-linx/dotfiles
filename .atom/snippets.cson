@@ -14,5 +14,36 @@
 
   'console.log.util.inspect':
     'prefix': 'lll'
-    'body': '/**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\',
-             require(\'util\').inspect(${1}, { showHidden: false, depth: null, colors: true }), \'\\\\n>>---------\\\\n\');/*-debug-*/'
+    'body': '''
+      /**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\',/*-debug-*/
+      /**/  require(\'util\').inspect(${1}, { showHidden: false, depth: null, colors: true }), \'\\\\n>>---------\\\\n\');/*-debug-*/
+      '''
+
+  'console.log.util.inspect1':
+    'prefix': 'lll1'
+    'body': '''
+      /**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\',/*-debug-*/
+      /**/  require(\'util\').inspect(${1}, { showHidden: false, depth: 1, colors: true }), \'\\\\n>>---------\\\\n\');/*-debug-*/
+      '''
+
+  'console.log.util.inspect2':
+    'prefix': 'lll2'
+    'body': '''
+      /**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\',/*-debug-*/
+      /**/  require(\'util\').inspect(${1}, { showHidden: false, depth: 2, colors: true }), \'\\\\n>>---------\\\\n\');/*-debug-*/
+      '''
+
+  'console.log.util.inspect3':
+    'prefix': 'lll3'
+    'body': '''
+      /**/console.log(\'\\\\n>>---------\\\\n ${1}:\\\\n\',/*-debug-*/
+      /**/  require(\'util\').inspect(${1}, { showHidden: false, depth: 3, colors: true }), \'\\\\n>>---------\\\\n\');/*-debug-*/
+      '''
+
+  'create.then.binded':
+    'prefix': 'then'
+    'body': '''
+      then(function(${1}) {
+
+      })
+      '''

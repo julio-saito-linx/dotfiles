@@ -12,3 +12,4 @@
 **/.env
 *~
 *privkey.asc
+.idea
