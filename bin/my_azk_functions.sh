@@ -1,7 +1,8 @@
 #!/bin/bash
 
-
+#######################################################
 # output colors
+#######################################################
 
 atput() {
   [ -z "$TERM" ] && return 0
@@ -61,7 +62,9 @@ function exec_and_log() {
 
 
 
+#######################################################
 # azk "ALIASES"
+#######################################################
 
 function bazk() {
   log yellow "using /usr/bin/azk";
@@ -75,47 +78,90 @@ function mazk() {
 
 
 
+#######################################################
+#######################################################
 # azk lauchers
+#######################################################
+#######################################################
 
+  #######################################################
   ## azk dev
+  #######################################################
 function azk_atom() {
   exec_and_log cd ~/_git/azk
   exec_and_log atom ~/_git/azk
 }
 
 function z1_azk_start_agent() {
+  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   exec_and_log ./bin/azk agent start --no-daemon
 }
 
 function z2_azk_nvm_gulp_watch() {
+  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   exec_and_log ./bin/azk nvm gulp watch
 }
 
 function z3_tail_sed_azk_log_files() {
+  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   log bold "tail -f ~/.azk/data/logs/azk.log | sed -n '/\[postal\]/p' & tail -f ~/.azk/data/logs/azk_test.log | sed -n '/\[postal\]/p'";
   tail -f ~/.azk/data/logs/azk.log | sed -n '/\[postal\]/p' & tail -f ~/.azk/data/logs/azk_test.log | sed -n '/\[postal\]/p'
 }
 
+function ztests_run_all_azk_tests() {
+  exec_and_log export AZK_USE_VM=false
+  exec_and_log cd ~/_git/azk
+  exec_and_log ./bin/azk nvm gulp test
+}
+
+  #######################################################
+  ## azk dev with VM
+  #######################################################
+function zv1_azk_start_agent_with_VM() {
+  exec_and_log export AZK_USE_VM=true
+  exec_and_log cd ~/_git/azk
+  exec_and_log ./bin/azk agent start --no-daemon
+}
+
+function zvtests_run_all_azk_tests_with_VM() {
+  exec_and_log export AZK_USE_VM=true
+  exec_and_log cd ~/_git/azk
+  exec_and_log ./bin/azk nvm gulp test
+}
+
+  #######################################################
   ## master azk
+  #######################################################
 function mazk_atom() {
+  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
   exec_and_log atom ~/_git/master-azk
 }
 
 function mz1_azk_start_agent() {
+  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
   exec_and_log ./bin/azk agent start --no-daemon
 }
 
 function mz2_azk_nvm_gulp_watch() {
+  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
   exec_and_log ./bin/azk nvm gulp watch
 }
 
+function mztests_run_all_azk_tests() {
+  exec_and_log export AZK_USE_VM=false
+  exec_and_log cd ~/_git/master-azk
+  exec_and_log ./bin/azk nvm gulp test
+}
+
+  #######################################################
   ## utilitários
+  #######################################################
 function todo_atom() {
   exec_and_log cd ~/_git/todolist.md
   exec_and_log atom ~/_git/todolist.md
