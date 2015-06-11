@@ -93,6 +93,7 @@ function azk_atom() {
 }
 
 function z1_azk_start_agent() {
+  exec_and_log sudo rm -rf /etc/resolver/dev.azk.io
   exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   exec_and_log ./bin/azk agent start --no-daemon
@@ -121,6 +122,7 @@ function ztests_run_all_azk_tests() {
   ## azk dev with VM
   #######################################################
 function zv1_azk_start_agent_with_VM() {
+  exec_and_log sudo rm -rf /etc/resolver/dev.azk.io
   exec_and_log export AZK_USE_VM=true
   exec_and_log cd ~/_git/azk
   exec_and_log ./bin/azk agent start --no-daemon
