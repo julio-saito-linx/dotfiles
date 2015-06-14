@@ -42,5 +42,5 @@ ln -s "$PWD/.atom/snippets.cson" "$HOME/.atom/snippets.cson"
 
 # oh-my-zsh/plugins
 
-rm -rf "$HOME/.oh-my-zsh/custom/azk"
-ln -s "$PWD/.oh-my-zsh/custom/azk" "$HOME/.oh-my-zsh/custom/azk"
+rm -rf "$HOME/.oh-my-zsh/custom/plugins/azk"
+ln -s "$PWD/.oh-my-zsh/custom/plugins/azk" "$HOME/.oh-my-zsh/custom/plugins/azk"
