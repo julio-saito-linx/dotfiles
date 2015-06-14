@@ -42,8 +42,5 @@ ln -s "$PWD/.atom/snippets.cson" "$HOME/.atom/snippets.cson"
 
 # oh-my-zsh/plugins
 
-rm -rf "$HOME/.oh-my-zsh/plugins/rbates"
-ln -s "$PWD/.oh-my-zsh/plugins/rbates" "$HOME/.oh-my-zsh/plugins/rbates"
-
-rm -rf "$HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting"
-ln -s "$PWD/.oh-my-zsh/plugins/zsh-syntax-highlighting" "$HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting"
+rm -rf "$HOME/.oh-my-zsh/custom/azk"
+ln -s "$PWD/.oh-my-zsh/custom/azk" "$HOME/.oh-my-zsh/custom/azk"
