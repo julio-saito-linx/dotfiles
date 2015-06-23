@@ -7,6 +7,7 @@ plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk)
 export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
 export PATH="/usr/local/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
+export PATH="$HOME/_git/dotfiles/flow:$PATH"
 # get my dotfiles bin accessible
 export PATH="$HOME/_git/dotfiles/bin:$PATH"
 # azk

@@ -9,6 +9,9 @@
       "monokai-dark"
     ]
     projectHome: "/home/julio/_git"
+    disabledPackages: [
+      "tree-view"
+    ]
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
@@ -33,3 +36,5 @@
     cancelledMarker: "[ cancelled ]"
   "merge-conflicts": {}
   "git-blame-plus": {}
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false

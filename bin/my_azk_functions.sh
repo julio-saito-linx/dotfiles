@@ -68,6 +68,12 @@ function exec_and_log() {
 
 function bazk() {
   log yellow "using /usr/bin/azk";
+
+  log yellow "unset AZK_SUBSCRIBE_POSTAL";
+  log yellow "unset AZK_OUTPUT_LOG_LEVEL";
+  log yellow "unset AZK_LOG_LEVEL";
+  log yellow "unset BLUEBIRD_DEBUG";
+
   /usr/bin/azk $@;
 }
 
