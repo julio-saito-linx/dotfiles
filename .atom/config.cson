@@ -1,40 +1,26 @@
 "*":
-  "exception-reporting":
-    userId: "29e05f29-2523-a138-a047-74dc8aa070e6"
-  welcome:
-    showOnStartup: false
-  core:
-    themes: [
-      "atom-dark-ui"
-      "monokai-dark"
-    ]
-    projectHome: "/home/julio/_git"
-    disabledPackages: [
-      "tree-view"
-    ]
+  linter: {}
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
-    fontSize: 18
-  linter:
-    subtleLinterErrors: [
-      "jshint"
-      "jscs"
+    preferredLineLength: 120
+    fontSize: 17
+  core:
+    disabledPackages: [
+      "motepair"
     ]
-  "atom-alignment": {}
-  "highlight-selected": {}
-  "autocomplete-plus":
-    autoActivationDelay: 300
-    maxVisibleSuggestions: 5
-    confirmCompletion: "enter"
-  "spell-check": {}
-  "markdown-preview": {}
-  react: {}
-  tasks:
-    completeMarker: "- [x]"
-    baseMarker: "- [ ]"
-    cancelledMarker: "[ cancelled ]"
-  "merge-conflicts": {}
-  "git-blame-plus": {}
+    themes: [
+      "one-dark-ui"
+      "monokai-dark"
+    ]
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  react: {}
+  "exception-reporting":
+    userId: "85a745d0-0425-f91b-6cbd-abbedd8e3643"
+  welcome:
+    showOnStartup: false
+  "autocomplete-plus":
+    suppressActivationForEditorClasses: [
+      "1"
+    ]
