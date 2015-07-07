@@ -1,13 +1,15 @@
 "*":
-  linter: {}
+  linter:
+    showErrorPanel: false
   editor:
     invisibles: {}
     fontFamily: "Source Code Pro"
     preferredLineLength: 120
-    fontSize: 17
+    fontSize: 18
   core:
     disabledPackages: [
       "motepair"
+      "linter-jshint"
     ]
     themes: [
       "one-dark-ui"
@@ -24,3 +26,14 @@
     suppressActivationForEditorClasses: [
       "1"
     ]
+  valign:
+    COLON:
+      align: "right"
+      padding: "both"
+  docblockr: {}
+  "linter-jsxhint":
+    harmony: true
+  "linter-jshint": {}
+  "linter-jscs":
+    harmony: true
+    verbose: true
