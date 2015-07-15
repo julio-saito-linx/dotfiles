@@ -5,7 +5,7 @@
     invisibles: {}
     fontFamily: "Source Code Pro"
     preferredLineLength: 120
-    fontSize: 19
+    fontSize: 18
   core:
     disabledPackages: [
       "motepair"
@@ -45,6 +45,16 @@
     cancelledMarker: "- [-]"
     completeMarker: "- [x]"
     archiveSeparator: "-----------------------"
+  "markdown-writer":
+    fileExtension: ".md"
+  typewriter: {}
+".gfm.source":
+  editor:
+    preferredLineLength: 120
+    scrollPastEnd: true
 ".text.todo":
   editor:
     preferredLineLength: 120
+"source.gfm":
+  editor:
+    softWrap: true
