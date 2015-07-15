@@ -5,11 +5,13 @@
     invisibles: {}
     fontFamily: "Source Code Pro"
     preferredLineLength: 120
-    fontSize: 18
+    fontSize: 19
   core:
     disabledPackages: [
       "motepair"
       "linter-jshint"
+      "linter-jsxhint"
+      "linter-jscs"
     ]
     themes: [
       "one-dark-ui"
@@ -37,3 +39,12 @@
   "linter-jscs":
     harmony: true
     verbose: true
+  "linter-eslint": {}
+  tasks:
+    baseMarker: "- [ ]"
+    cancelledMarker: "- [-]"
+    completeMarker: "- [x]"
+    archiveSeparator: "-----------------------"
+".text.todo":
+  editor:
+    preferredLineLength: 120
