@@ -17,11 +17,17 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"LESS",
-		"Vintage",
 		"Handlebars",
+		"JavaScript",
+		"LESS",
 		"Markdown",
-		"JavaScript"
+		"Vintage"
+	],
+	"index_exclude_patterns":
+	[
+		"node_modules*",
+		"*.log",
+		"npm-shrinkwrap.json"
 	],
 	"preview_on_click": false,
 	"remember_open_files": false,

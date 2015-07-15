@@ -93,9 +93,9 @@ function mazk() {
   #######################################################
   ## azk dev
   #######################################################
-function azk_atom() {
+function azk_subl() {
   exec_and_log cd ~/_git/azk
-  exec_and_log atom ~/_git/azk
+  exec_and_log subl ~/_git/azk/project.sublime-project
 }
 
 function z1_azk_start_agent() {
@@ -143,10 +143,10 @@ function zvtests_run_all_azk_tests_with_VM() {
   #######################################################
   ## master azk
   #######################################################
-function mazk_atom() {
+function mazk_subl() {
   exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
-  exec_and_log atom ~/_git/master-azk
+  exec_and_log subl ~/_git/master-azk/project.sublime-project
 }
 
 function mz1_azk_start_agent() {
@@ -170,11 +170,11 @@ function mztests_run_all_azk_tests() {
   #######################################################
   ## utilitários
   #######################################################
-function todo_atom() {
+function todo_subl() {
   exec_and_log cd ~/_git/todolist.md
-  exec_and_log atom ~/_git/todolist.md
+  exec_and_log subl ~/_git/todolist.md
 }
-function dotfiles_atom() {
+function dotfiles_subl() {
   exec_and_log cd ~/_git/dotfiles
-  exec_and_log atom ~/_git/dotfiles
+  exec_and_log subl ~/_git/dotfiles
 }
