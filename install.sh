@@ -28,6 +28,11 @@ rm -rf "$HOME/.vim"
 ln -s "$PWD/.vim" "$HOME/.vim"
 
 
+# sublime user folder
+
+rm -rf "$HOME/.config/sublime-text-3/Packages/User"
+ln -s "$PWD/sublime3-user" "$HOME/.config/sublime-text-3/Packages/User"
+
 # atom configs
 
 rm -rf "$HOME/.atom/config.cson"
