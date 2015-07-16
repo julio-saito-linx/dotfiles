@@ -17,9 +17,9 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"LESS",
 		"Handlebars",
 		"JavaScript",
-		"LESS",
 		"Markdown",
 		"Vintage"
 	],
@@ -30,6 +30,7 @@
 		"npm-shrinkwrap.json"
 	],
 	"preview_on_click": false,
+	"remember_full_screen": true,
 	"remember_open_files": false,
 	"soda_classic_tabs": true,
 	"theme": "Soda Dark 3.sublime-theme",
