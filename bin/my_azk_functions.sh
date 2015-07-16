@@ -178,3 +178,6 @@ function dotfiles_subl() {
   exec_and_log cd ~/_git/dotfiles
   exec_and_log subl ~/_git/dotfiles
 }
+function sb() {
+  exec_and_log subl project.sublime-project
+}
