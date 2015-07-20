@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[/**/console.log('\\n>>---------\\n ${1}:\\n',/*-debug-*/
+/**/  require('util').inspect(${1}, /*-debug-*/
+/**/  { showHidden: false, depth: null, colors: true }), '\\n>>---------\\n');/*-debug-*/]]></content>
+	<tabTrigger>lll</tabTrigger>
+	<scope>source.js</scope>
+	<description>inspect</description>
+</snippet>

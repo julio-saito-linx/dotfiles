@@ -1,6 +1,0 @@
-<snippet>
-  <content><![CDATA[/**/require('azk-core').dlog(${1}, "${1}", null);/*-debug-*/]]></content>
-  <tabTrigger>dl</tabTrigger>
-  <scope>source.js</scope>
-  <description>dlog: console.log + inspect</description>
-</snippet>

@@ -33,6 +33,7 @@
 	"remember_full_screen": true,
 	"remember_open_files": false,
 	"soda_classic_tabs": true,
+	"close_windows_when_empty": false,
 	"theme": "Soda Dark 3.sublime-theme",
 	"word_wrap": "false"
 }
