@@ -4,7 +4,7 @@
 		"debug": true,
 		"delay": 0.5,
 		"error_color": "D02000",
-		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Knob/simple/Knob - simple.gutter-theme",
+		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
 		"gutter_theme_excludes":
 		[
 		],
@@ -13,7 +13,7 @@
 		{
 			"eslint":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -33,7 +33,7 @@
 			},
 			"jscs":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -83,7 +83,7 @@
 				]
 			}
 		},
-		"mark_style": "fill",
+		"mark_style": "outline",
 		"no_column_highlights_line": false,
 		"passive_warnings": false,
 		"paths":

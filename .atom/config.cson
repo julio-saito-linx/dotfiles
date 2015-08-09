@@ -5,13 +5,14 @@
     invisibles: {}
     fontFamily: "Source Code Pro"
     preferredLineLength: 120
-    fontSize: 18
+    fontSize: 20
   core:
     disabledPackages: [
-      "motepair"
       "linter-jshint"
       "linter-jsxhint"
       "linter-jscs"
+      "linter-jscs"
+      "linter-eslint"
     ]
     themes: [
       "one-dark-ui"
@@ -48,13 +49,14 @@
   "markdown-writer":
     fileExtension: ".md"
   typewriter: {}
+  motepair: {}
+".text.todo":
+  editor:
+    preferredLineLength: 120
 ".gfm.source":
   editor:
     preferredLineLength: 120
     scrollPastEnd: true
-".text.todo":
-  editor:
-    preferredLineLength: 120
 "source.gfm":
   editor:
     softWrap: true

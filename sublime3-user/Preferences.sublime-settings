@@ -11,18 +11,19 @@
 		}
 	],
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Source Code Pro",
-	"font_size": 15,
+	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"LESS",
 		"Vintage",
-		"Handlebars",
-		"Markdown",
 		"JavaScript",
-		"LESS"
+		"Handlebars",
+		"Markdown"
 	],
 	"index_exclude_patterns":
 	[
@@ -34,8 +35,8 @@
 	"remember_full_screen": true,
 	"remember_open_files": false,
 	"soda_classic_tabs": true,
+	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
-	"word_wrap": "false",
-
-    "ensure_newline_at_eof_on_save": true,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": "false"
 }
