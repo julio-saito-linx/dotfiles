@@ -1,17 +1,4 @@
-#!/bin/bash -e
-
-export GIT_EDITOR=vim
-commit_message="$1"
-
-ROOT_UID=0
-super() {
-  echo "${@}"
-  if [[ $UID != $ROOT_UID ]]; then
-    sudo "${@}"
-  else
-    $@
-  fi
-}
+#!/bin/bash
 
 atput() {
   [ -z "$TERM" ] && return 0
@@ -19,6 +6,8 @@ atput() {
 }
 
 function save() {
+  commit_message="$1"
+
   if atput setaf 1 &> /dev/null; then
       atput sgr0
       if [[ $(atput colors) -ge 256 ]] 2>/dev/null; then
@@ -48,14 +37,15 @@ function save() {
   fi
 
   echo    ""
-  echo    "  ${GREEN}------------------------------${RESET}"
-  echo    "  starting to push code..."
-  echo    "  ${GREEN}------------------------------${RESET}"
-
+  echo    "  ${MAGENTA}------------------------------${RESET}"
+  echo    "  ${MAGENTA}------------------------------${RESET}"
+  echo    "  !! PUSHING CODE..."
+  echo    "  ${MAGENTA}------------------------------${RESET}"
+  echo    "  ${MAGENTA}------------------------------${RESET}"
 
   echo    ""
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  echo    "  changing project files permitions to $USER"
+  echo    "  changing project files permitions to '$USER'"
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
   echo    "  ${WHITE}${BOLD}$ sudo chown -R `id -un`:`id -gn` .${RESET}"
   echo    ""
@@ -74,8 +64,8 @@ function save() {
   echo    "  ${WHITE}${BOLD}$ git diff HEAD${RESET}"
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
   echo -n " ['y/N'] "
-  read -s -n 1 git_diff_yes
-
+  read -k 1 -s git_diff_yes
+  echo "=$git_diff_yes"
 
   echo    ""
   echo    ""
@@ -96,7 +86,7 @@ function save() {
     echo    " current commit message: ${WHITE}${BOLD}$'$commit_message'${RESET}"
     echo    ""
     echo -n " [ press ${WHITE}${BOLD}$Ctrl + C${RESET} to abort ] "
-    read -n 1 -s
+    read -k 1
 
     echo    ""
     echo    "  ${GREEN}-----------------------------------------------${RESET}"
