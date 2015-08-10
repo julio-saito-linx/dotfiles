@@ -20,10 +20,10 @@
 	"ignored_packages":
 	[
 		"LESS",
-		"Vintage",
-		"JavaScript",
 		"Handlebars",
-		"Markdown"
+		"JavaScript",
+		"Markdown",
+		"Vintage"
 	],
 	"index_exclude_patterns":
 	[

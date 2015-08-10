@@ -23,7 +23,7 @@ source ~/.nvm/nvm.sh
 
 # Man page configure
 if [[ -f "$(which most 2> /dev/null)" ]]; then
-    export MANPAGER="$(which most) -s"
+  export MANPAGER="$(which most) -s"
 fi
 
 # keen-io azk
@@ -36,8 +36,7 @@ export AZK_OUTPUT_LOG_LEVEL=warn
 export AZK_LOG_LEVEL=debug
 export BLUEBIRD_DEBUG=1
 
-# enable my azk functions
-source $HOME/_git/dotfiles/bin/my_azk_functions.sh
-
-# enable my helper functions
-source $HOME/_git/dotfiles/bin/my_helper_functions.sh
+# enable helpers
+. $HOME/_git/dotfiles/bin/azk_helpers.sh
+. $HOME/_git/dotfiles/bin/git_helper.sh
+. $HOME/_git/dotfiles/bin/xclip_helpers.sh
