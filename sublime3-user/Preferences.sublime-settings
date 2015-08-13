@@ -19,11 +19,11 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"LESS",
-		"Handlebars",
-		"JavaScript",
 		"Markdown",
-		"Vintage"
+		"JavaScript",
+		"Vintage",
+		"LESS",
+		"Handlebars"
 	],
 	"index_exclude_patterns":
 	[
