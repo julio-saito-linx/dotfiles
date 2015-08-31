@@ -56,6 +56,7 @@ yellow() { log yellow $@; }
 bold() { log bold $@; }
 
 function exec_and_log() {
+  echo ""
   log bold "$@";
   $@;
 }
@@ -180,4 +181,23 @@ function dotfiles_subl() {
 }
 function sb() {
   exec_and_log subl project.sublime-project
+}
+
+
+  #######################################################
+  ## azk button
+  #######################################################
+function abt_master() {
+  exec_and_log sudo git remote rm azk_deploy
+  exec_and_log git fetch --all --prune
+  exec_and_log git checkout master
+  exec_and_log git pull upstream master
+}
+
+function abt_rebase_azkfile_with_master() {
+  exec_and_log git checkout azkfile && git rebase master
+}
+
+function abt_push_forcing() {
+  exec_and_log git push origin --force
 }
