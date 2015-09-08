@@ -8,16 +8,6 @@ atput() {
 function save() {
   commit_message="$1"
 
-  ROOT_UID=0
-  super() {
-    echo "${@}"
-    if [[ $UID != $ROOT_UID ]]; then
-      sudo "${@}"
-    else
-      $@
-    fi
-  }
-
   if atput setaf 1 &> /dev/null; then
       atput sgr0
       if [[ $(atput colors) -ge 256 ]] 2>/dev/null; then

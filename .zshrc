@@ -18,8 +18,8 @@ fi
 
 export EDITOR='atom'
 export LESS='-RXF'
-source $ZSH/oh-my-zsh.sh
-source ~/.nvm/nvm.sh
+. $ZSH/oh-my-zsh.sh
+. ~/.nvm/nvm.sh
 
 # Man page configure
 if [[ -f "$(which most 2> /dev/null)" ]]; then
@@ -39,4 +39,5 @@ export BLUEBIRD_DEBUG=1
 # enable helpers
 . $HOME/_git/dotfiles/bin/azk_helpers.sh
 . $HOME/_git/dotfiles/bin/git_helper.sh
+. $HOME/_git/dotfiles/bin/utils.sh
 . $HOME/_git/dotfiles/bin/xclip_helpers.sh

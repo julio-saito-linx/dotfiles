@@ -62,7 +62,6 @@ function exec_and_log() {
 }
 
 
-
 #######################################################
 # azk "ALIASES"
 #######################################################
@@ -82,7 +81,6 @@ function mazk() {
   log yellow "using ~/_git/master-azk/bin/azk";
   ~/_git/master-azk/bin/azk $@;
 }
-
 
 
 #######################################################
@@ -167,22 +165,6 @@ function mztests_run_all_azk_tests() {
   exec_and_log cd ~/_git/master-azk
   exec_and_log ./bin/azk nvm gulp test
 }
-
-  #######################################################
-  ## utilitários
-  #######################################################
-function todo_subl() {
-  exec_and_log cd ~/_git/todolist.md
-  exec_and_log subl ~/_git/todolist.md
-}
-function dotfiles_subl() {
-  exec_and_log cd ~/_git/dotfiles
-  exec_and_log subl ~/_git/dotfiles
-}
-function sb() {
-  exec_and_log subl project.sublime-project
-}
-
 
   #######################################################
   ## azk button

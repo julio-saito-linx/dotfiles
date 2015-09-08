@@ -21,8 +21,8 @@
 	[
 		"Handlebars",
 		"LESS",
-		"Markdown",
 		"JavaScript",
+		"Markdown",
 		"Vintage"
 	],
 	"index_exclude_patterns":
