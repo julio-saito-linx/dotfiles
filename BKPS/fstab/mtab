@@ -23,9 +23,14 @@ cgroup /sys/fs/cgroup/blkio cgroup rw,relatime,blkio 0 0
 cgroup /sys/fs/cgroup/perf_event cgroup rw,relatime,perf_event 0 0
 cgroup /sys/fs/cgroup/net_prio cgroup rw,relatime,net_prio 0 0
 cgroup /sys/fs/cgroup/hugetlb cgroup rw,relatime,hugetlb 0 0
+/dev/sda2 /mnt/Files fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
+/dev/sdd1 /mnt/2GB fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
+/dev/sdc4 /mnt/MP3_2 fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
+/dev/sdf1 /mnt/Movies1 fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
+/dev/sdb1 /mnt/Movies2 fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
 binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,noexec,nosuid,nodev 0 0
 systemd /sys/fs/cgroup/systemd cgroup rw,noexec,nosuid,nodev,none,name=systemd 0 0
 gvfsd-fuse /run/user/1000/gvfs fuse.gvfsd-fuse rw,nosuid,nodev,user=julio 0 0
-/dev/sdb1 /media/julio/Movies\0402 fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
-/dev/sdf1 /media/julio/Movies\0401 fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
-/dev/sdd1 /media/julio/2gb fuseblk rw,nosuid,nodev,allow_other,default_permissions,blksize=4096 0 0
+/dev/mapper/fedora00-root /media/julio/6f442fa3-74bf-4814-94f6-de3fb0d612e4 ext4 rw,nosuid,nodev,uhelper=udisks2 0 0
+/dev/sde1 /media/julio/6bba1893-6c45-4cd2-bcd2-edd4eb8b887e ext4 rw,nosuid,nodev,uhelper=udisks2 0 0
+/dev/mapper/fedora00-home /media/julio/81109e8d-e48d-4dbb-9719-3bd4ab572e66 ext4 rw,nosuid,nodev,uhelper=udisks2 0 0
