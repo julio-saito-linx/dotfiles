@@ -68,20 +68,8 @@ function exec_and_log() {
 
 function bazk() {
   log yellow "using /usr/bin/azk";
-
-  log yellow "unset AZK_SUBSCRIBE_POSTAL";
-  log yellow "unset AZK_OUTPUT_LOG_LEVEL";
-  log yellow "unset AZK_LOG_LEVEL";
-  log yellow "unset BLUEBIRD_DEBUG";
-
   /usr/bin/azk $@;
 }
-
-function mazk() {
-  log yellow "using ~/_git/master-azk/bin/azk";
-  ~/_git/master-azk/bin/azk $@;
-}
-
 
 #######################################################
 #######################################################
@@ -99,26 +87,22 @@ function azk_subl() {
 
 function z1_azk_start_agent() {
   exec_and_log sudo rm -rf /etc/resolver/dev.azk.io
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   exec_and_log ./bin/azk agent start --no-daemon
 }
 
 function z2_azk_nvm_gulp_watch() {
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   exec_and_log ./bin/azk nvm gulp watch
 }
 
 function z3_tail_sed_azk_log_files() {
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   log bold "tail -f ~/.azk/data/logs/azk.log | sed -n '/\[postal\]/p' & tail -f ~/.azk/data/logs/azk_test.log | sed -n '/\[postal\]/p'";
   tail -f ~/.azk/data/logs/azk.log | sed -n '/\[postal\]/p' & tail -f ~/.azk/data/logs/azk_test.log | sed -n '/\[postal\]/p'
 }
 
 function ztests_run_all_azk_tests() {
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/azk
   exec_and_log ./bin/azk nvm gulp test
 }
@@ -143,25 +127,21 @@ function zvtests_run_all_azk_tests_with_VM() {
   ## master azk
   #######################################################
 function mazk_subl() {
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
   exec_and_log subl ~/_git/master-azk/project.sublime-project
 }
 
 function mz1_azk_start_agent() {
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
   exec_and_log ./bin/azk agent start --no-daemon
 }
 
 function mz2_azk_nvm_gulp_watch() {
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
   exec_and_log ./bin/azk nvm gulp watch
 }
 
 function mztests_run_all_azk_tests() {
-  exec_and_log export AZK_USE_VM=false
   exec_and_log cd ~/_git/master-azk
   exec_and_log ./bin/azk nvm gulp test
 }

@@ -24,35 +24,37 @@ _azk ()
 
     _arguments -C \
         ':command:->command' \
-		'(-h)-h[Show help usage.]' \
-		'(--help)--help[Show help usage.]' \
-		'(--version)--version[Show azk version.]' \
-		'(-h)-h[Show help usage.]' \
-		'(--help)--help[Show help usage.]' \
-		'(-h)-h[Show help usage.]' \
-		'(--help)--help[Show help usage.]' \
+		'(-h)-h[Shows help usage.]' \
+		'(--help)--help[Shows help usage.]' \
+		'(--version)--version[Shows azk version.]' \
+		'(-h)-h[Shows help usage.]' \
+		'(--help)--help[Shows help usage.]' \
+		'(-h)-h[Shows help usage.]' \
+		'(--help)--help[Shows help usage.]' \
         '*::options:->options'
 
     case $state in
         (command)
             local -a subcommands
             subcommands=(
-				'info[Shows systems information for the current `Azkfile.js`]'
-				'status[Shows azk agent status]'
-				'scale[Scales (up or down) an instance of the system(s)]'
-				'logs[Shows logs for the systems]'
-				'doctor[Shows an analysis of `azk`'\''s health]'
-				'stop[Stops azk agent running in the background]'
-				'vm[Controls a virtual machine.]'
-				'agent[Controls azk agent]'
-				'start[Start azk agent]'
-				'init[Initializes a project by adding the file Azkfile.js]'
-				'shell[Initializes a shell with instance context, or runs a specified command]'
-				'version[Shows azk version]'
-				'docker[Alias for calling docker in '\''azk'\'' scope configuration]'
-				'config[Controls azk configuration options]'
-				'restart[Stops all systems and starts them again]'
-				'help[Shows help about a specific command]'
+				'info[Shows systems information for the current Azkfile.js.]'
+				'status[Shows azk agent or virtual machine status.]'
+				'scale[Scales (up or down) one or more systems.]'
+				'logs[Shows logs for the systems.]'
+				'deploy[# run `deploy fast`]'
+				'open[Opens system URL in default or specified browser application.]'
+				'doctor[Shows an analysis of azk'\''s health.]'
+				'stop[Stops azk agent or virtual machine.]'
+				'vm[Controls the Virtual Machine.]'
+				'agent[Controls azk agent.]'
+				'start[Starts azk agent or virtual machine.]'
+				'init[Initializes a project by adding Azkfile.js.]'
+				'shell[Starts a shell from inside the deploy system container.]'
+				'version[Shows azk version.]'
+				'docker[Alias for calling docker in azk configuration scope.]'
+				'config[Controls azk configuration options.]'
+				'restart[Restarts local systems or the app on the remote server.]'
+				'help[Shows help about a specific command.]'
             )
             _values 'azk' $subcommands
         ;;
@@ -70,6 +72,12 @@ _azk ()
                 ;;
                 logs)
                     _azk-logs
+                ;;
+                deploy)
+                    _azk-deploy
+                ;;
+                open)
+                    _azk-open
                 ;;
                 doctor)
                     _azk-doctor
@@ -129,7 +137,7 @@ _azk-info ()
 		'(--log=-)--log=-' \
 		'(-v)-v' \
 		'(--verbose)--verbose' \
-
+        
 }
 
 _azk-status ()
@@ -211,6 +219,205 @@ _azk-logs ()
     fi
 }
 
+_azk-deploy ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    _arguments -C \
+        ':command:->command' \
+		'(-v)-v[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(--verbose)--verbose[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(-h)-h[Shows help usage.]' \
+		'(--help)--help[Shows help usage.]' \
+		'(-v)-v[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(--verbose)--verbose[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(-h)-h[Shows help usage.]' \
+		'(--help)--help[Shows help usage.]' \
+        '*::options:->options'
+
+    case $state in
+        (command)
+            local -a subcommands
+            subcommands=(
+				'shell'
+				'rollback'
+				'clear-cache'
+				'versions'
+				'fast'
+				'full'
+				'ssh'
+				'restart'
+            )
+            _values 'azk deploy' $subcommands
+        ;;
+
+        (options)
+            case $line[1] in
+                shell)
+                    _azk-deploy-shell
+                ;;
+                rollback)
+                    _azk-deploy-rollback
+                ;;
+                clear-cache)
+                    _azk-deploy-clear-cache
+                ;;
+                versions)
+                    _azk-deploy-versions
+                ;;
+                fast)
+                    _azk-deploy-fast
+                ;;
+                full)
+                    _azk-deploy-full
+                ;;
+                ssh)
+                    _azk-deploy-ssh
+                ;;
+                restart)
+                    _azk-deploy-restart
+                ;;
+            esac
+        ;;
+    esac
+
+}
+
+_azk-deploy-shell ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    if [[ $words[$CURRENT] == -* ]] ; then
+        _arguments -C \
+        ':command:->command' \
+		'(-c=-)-c=-' \
+		'(--command=-)--command=-' \
+		'(-v)-v' \
+		'(--verbose)--verbose' \
+		'(-h)-h' \
+		'(--help)--help' \
+
+    else
+        myargs=('<args>')
+        _message_next_arg
+    fi
+}
+
+_azk-deploy-rollback ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    if [[ $words[$CURRENT] == -* ]] ; then
+        _arguments -C \
+        ':command:->command' \
+		'(-v)-v[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(--verbose)--verbose[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(-h)-h[Shows help usage.]' \
+		'(--help)--help[Shows help usage.]' \
+
+    else
+        myargs=('<ref>')
+        _message_next_arg
+    fi
+}
+
+_azk-deploy-clear-cache ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    _arguments -C \
+        ':command:->command' \
+        
+}
+
+_azk-deploy-versions ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    _arguments -C \
+        ':command:->command' \
+        
+}
+
+_azk-deploy-fast ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    _arguments -C \
+        ':command:->command' \
+        
+}
+
+_azk-deploy-full ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    _arguments -C \
+        ':command:->command' \
+        
+}
+
+_azk-deploy-ssh ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    if [[ $words[$CURRENT] == -* ]] ; then
+        _arguments -C \
+        ':command:->command' \
+		'(-v)-v[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(--verbose)--verbose[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
+		'(-h)-h[Shows help usage.]' \
+		'(--help)--help[Shows help usage.]' \
+
+    else
+        myargs=('<args>')
+        _message_next_arg
+    fi
+}
+
+_azk-deploy-restart ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    _arguments -C \
+        ':command:->command' \
+        
+}
+
+_azk-open ()
+{
+    local context state state_descr line
+    typeset -A opt_args
+
+    if [[ $words[$CURRENT] == -* ]] ; then
+        _arguments -C \
+        ':command:->command' \
+		'(-a=-)-a=-' \
+		'(--open-with=-)--open-with=-' \
+		'(-q)-q' \
+		'(--quiet)--quiet' \
+		'(-h)-h' \
+		'(--help)--help' \
+		'(-l=-)-l=-' \
+		'(--log=-)--log=-' \
+		'(-v)-v' \
+		'(--verbose)--verbose' \
+
+    else
+        myargs=('<system>')
+        _message_next_arg
+    fi
+}
+
 _azk-doctor ()
 {
     local context state state_descr line
@@ -218,12 +425,16 @@ _azk-doctor ()
 
     _arguments -C \
         ':command:->command' \
-		'(--logo)--logo[Shows the `azk` logo before showing health information \[default: false\].]' \
-		'(-q)-q[Never prompt \[default: false\].]' \
-		'(--quiet)--quiet[Never prompt \[default: false\].]' \
-		'(-v)-v[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
-		'(--verbose)--verbose[Sets the level of detail - multiple supported (-vv == --verbose 2) \[default: 0\].]' \
-
+		'(--logo)--logo' \
+		'(-q)-q' \
+		'(--quiet)--quiet' \
+		'(-h)-h' \
+		'(--help)--help' \
+		'(-l=-)-l=-' \
+		'(--log=-)--log=-' \
+		'(-v)-v' \
+		'(--verbose)--verbose' \
+        
 }
 
 _azk-stop ()
@@ -286,6 +497,7 @@ _azk-agent ()
 		'(--no-daemon)--no-daemon' \
 		'(--child)--child' \
 		'(--no-reload-vm)--no-reload-vm' \
+		'(--configure-file=-)--configure-file=-' \
 		'(-q)-q' \
 		'(--quiet)--quiet' \
 		'(-h)-h' \
@@ -331,7 +543,7 @@ _azk-agent-status ()
 
     _arguments -C \
         ':command:->command' \
-
+        
 }
 
 _azk-agent-start ()
@@ -341,7 +553,7 @@ _azk-agent-start ()
 
     _arguments -C \
         ':command:->command' \
-
+        
 }
 
 _azk-agent-stop ()
@@ -351,7 +563,7 @@ _azk-agent-stop ()
 
     _arguments -C \
         ':command:->command' \
-
+        
 }
 
 _azk-start ()
@@ -366,8 +578,31 @@ _azk-start ()
 		'(--reprovision)--reprovision' \
 		'(-B)-B' \
 		'(--rebuild)--rebuild' \
-		'(-o=-)-o=-' \
-		'(--open=-)--open=-' \
+		'(-r)-r' \
+		'(--no-remove)--no-remove' \
+		'(-o)-o' \
+		'(--open)--open' \
+		'(-a=-)-a=-' \
+		'(--open-with=-)--open-with=-' \
+		'(-q)-q' \
+		'(--quiet)--quiet' \
+		'(-h)-h' \
+		'(--help)--help' \
+		'(-l=-)-l=-' \
+		'(--log=-)--log=-' \
+		'(-v)-v' \
+		'(--verbose)--verbose' \
+		'(--git-ref=-)--git-ref=-' \
+		'(-R)-R' \
+		'(--reprovision)--reprovision' \
+		'(-B)-B' \
+		'(--rebuild)--rebuild' \
+		'(-r)-r' \
+		'(--no-remove)--no-remove' \
+		'(-o)-o' \
+		'(--open)--open' \
+		'(-a=-)-a=-' \
+		'(--open-with=-)--open-with=-' \
 		'(-q)-q' \
 		'(--quiet)--quiet' \
 		'(-h)-h' \
@@ -378,7 +613,7 @@ _azk-start ()
 		'(--verbose)--verbose' \
 
     else
-        myargs=('<system>')
+        myargs=('<system>' '<git-repo>' '<dest-path>')
         _message_next_arg
     fi
 }
@@ -424,28 +659,30 @@ _azk-shell ()
 		'(-i=-)-i=-' \
 		'(--image=-)--image=-' \
 		'(--shell=-)--shell=-' \
+		'(-B)-B' \
+		'(--rebuild)--rebuild' \
 		'(-r)-r' \
 		'(--no-remove)--no-remove' \
 		'(--silent)--silent' \
-		'(-T)-T' \
-		'(--tty)--tty' \
 		'(-t)-t' \
+		'(--tty)--tty' \
+		'(-T)-T' \
 		'(--no-tty)--no-tty' \
+		'(-m=-)-m=-' \
+		'(--mount=-)--mount=-' \
+		'(-e=-)-e=-' \
+		'(--env=-)--env=-' \
 		'(-q)-q' \
 		'(--quiet)--quiet' \
 		'(-h)-h' \
 		'(--help)--help' \
 		'(-l=-)-l=-' \
 		'(--log=-)--log=-' \
-		'(-m=-)-m=-' \
-		'(--mount=-)--mount=-' \
-		'(-e=-)-e=-' \
-		'(--env=-)--env=-' \
 		'(-v)-v' \
 		'(--verbose)--verbose' \
 
     else
-        myargs=('<system>')
+        myargs=('<system>' '<shell-args>')
         _message_next_arg
     fi
 }
@@ -457,7 +694,7 @@ _azk-version ()
 
     _arguments -C \
         ':command:->command' \
-
+        
 }
 
 _azk-docker ()
@@ -488,8 +725,10 @@ _azk-config ()
     local context state state_descr line
     typeset -A opt_args
 
-    _arguments -C \
+    if [[ $words[$CURRENT] == -* ]] ; then
+        _arguments -C \
         ':command:->command' \
+		'(--no-colored)--no-colored' \
 		'(-q)-q' \
 		'(--quiet)--quiet' \
 		'(-h)-h' \
@@ -498,50 +737,11 @@ _azk-config ()
 		'(--log=-)--log=-' \
 		'(-v)-v' \
 		'(--verbose)--verbose' \
-        '*::options:->options'
 
-    case $state in
-        (command)
-            local -a subcommands
-            subcommands=(
-				'track-status'
-				'track-toggle'
-            )
-            _values 'azk config' $subcommands
-        ;;
-
-        (options)
-            case $line[1] in
-                track-status)
-                    _azk-config-track-status
-                ;;
-                track-toggle)
-                    _azk-config-track-toggle
-                ;;
-            esac
-        ;;
-    esac
-
-}
-
-_azk-config-track-status ()
-{
-    local context state state_descr line
-    typeset -A opt_args
-
-    _arguments -C \
-        ':command:->command' \
-
-}
-
-_azk-config-track-toggle ()
-{
-    local context state state_descr line
-    typeset -A opt_args
-
-    _arguments -C \
-        ':command:->command' \
-
+    else
+        myargs=('<config-value>')
+        _message_next_arg
+    fi
 }
 
 _azk-restart ()
@@ -556,8 +756,12 @@ _azk-restart ()
 		'(--reprovision)--reprovision' \
 		'(-B)-B' \
 		'(--rebuild)--rebuild' \
-		'(-o=-)-o=-' \
-		'(--open=-)--open=-' \
+		'(-r)-r' \
+		'(--no-remove)--no-remove' \
+		'(-o)-o' \
+		'(--open)--open' \
+		'(-a=-)-a=-' \
+		'(--open-with=-)--open-with=-' \
 		'(-q)-q' \
 		'(--quiet)--quiet' \
 		'(-h)-h' \
