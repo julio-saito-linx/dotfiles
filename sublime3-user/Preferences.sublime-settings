@@ -1,5 +1,7 @@
 {
-	"added_words":
+	// Characters that are considered to separate words
+  "word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
+  "added_words":
 	[
 		"azk",
 		"js"
