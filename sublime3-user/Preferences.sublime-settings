@@ -1,7 +1,5 @@
 {
-	// Characters that are considered to separate words
-  "word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
-  "added_words":
+	"added_words":
 	[
 		"azk",
 		"js"
@@ -45,5 +43,6 @@
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
 	"word_wrap": "false"
 }

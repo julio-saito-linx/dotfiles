@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[/**/console.log('\\n%% ${1} \\n');/*-debug-*/]]></content>
+	<content><![CDATA[/**/console.log('\\n%% ${1} \\n');/* -debug- */]]></content>
 	<tabTrigger>l</tabTrigger>
 	<scope>source.js</scope>
 	<description>print string;</description>
