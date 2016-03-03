@@ -43,14 +43,13 @@ function save() {
   echo    "  ${MAGENTA}------------------------------${RESET}"
   echo    "  ${MAGENTA}------------------------------${RESET}"
 
-  echo    ""
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  echo    "  changing project files permitions to '$USER'"
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  echo    "  ${WHITE}${BOLD}$ sudo chown -R `id -un`:`id -gn` .${RESET}"
-  echo    ""
-  super chown -R `id -un`:`id -gn` .
-
+  # echo    ""
+  # echo    "  ${GREEN}-----------------------------------------------${RESET}"
+  # echo    "  changing project files permitions to '$USER'"
+  # echo    "  ${GREEN}-----------------------------------------------${RESET}"
+  # echo    "  ${WHITE}${BOLD}$ sudo chown -R `id -un`:`id -gn` .${RESET}"
+  # echo    ""
+  # super chown -R `id -un`:`id -gn` .
 
   echo    ""
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
