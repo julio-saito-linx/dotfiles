@@ -16,7 +16,7 @@ if [ -d "${azk_clone_path}/bin" ]; then
   export PATH="${azk_clone_path}/bin:$PATH"
 fi
 
-export EDITOR='atom'
+export EDITOR='subl'
 export LESS='-RXF'
 . $ZSH/oh-my-zsh.sh
 . ~/.nvm/nvm.sh

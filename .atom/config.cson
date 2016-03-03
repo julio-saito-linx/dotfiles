@@ -1,62 +1,74 @@
 "*":
-  linter:
-    showErrorPanel: false
-  editor:
-    invisibles: {}
-    fontFamily: "Source Code Pro"
-    preferredLineLength: 120
-    fontSize: 20
+  "autocomplete-plus":
+    suppressActivationForEditorClasses: [
+      "1"
+    ]
   core:
     disabledPackages: [
       "linter-jshint"
       "linter-jsxhint"
       "linter-jscs"
       "linter-jscs"
-      "linter-eslint"
+      "tasks"
+      "react"
+      "motepair"
+      "highlight-selected"
     ]
     themes: [
-      "one-dark-ui"
-      "monokai-dark"
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
-  "file-watcher":
-    promptWhenFileHasChangedOnDisk: false
-  react: {}
+  docblockr: {}
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 20
+    invisibles: {}
+    nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#%^&*|+=[]{}`~?-"
+    preferredLineLength: 120
   "exception-reporting":
     userId: "85a745d0-0425-f91b-6cbd-abbedd8e3643"
-  welcome:
-    showOnStartup: false
-  "autocomplete-plus":
-    suppressActivationForEditorClasses: [
-      "1"
-    ]
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    highlightBackground: true
+    ignoreCase: true
+    onlyHighlightWholeWords: false
+  linter: {}
+  "linter-eslint": {}
+  "linter-jscs":
+    harmony: true
+    verbose: true
+  "linter-jshint": {}
+  "linter-jsxhint":
+    harmony: true
+  "markdown-writer":
+    fileExtension: ".md"
+  motepair: {}
+  "quick-highlight":
+    countDisplayPosition: "Right"
+    displayCountOnStatusBar: false
+    highlightSelectionDelay: 30
+  react: {}
+  tasks:
+    archiveSeparator: "-----------------------"
+    baseMarker: "- [ ]"
+    cancelledMarker: "- [-]"
+    completeMarker: "- [x]"
+  typewriter: {}
   valign:
     COLON:
       align: "right"
       padding: "both"
-  docblockr: {}
-  "linter-jsxhint":
-    harmony: true
-  "linter-jshint": {}
-  "linter-jscs":
-    harmony: true
-    verbose: true
-  "linter-eslint": {}
-  tasks:
-    baseMarker: "- [ ]"
-    cancelledMarker: "- [-]"
-    completeMarker: "- [x]"
-    archiveSeparator: "-----------------------"
-  "markdown-writer":
-    fileExtension: ".md"
-  typewriter: {}
-  motepair: {}
-".text.todo":
-  editor:
-    preferredLineLength: 120
+  welcome:
+    showOnStartup: false
 ".gfm.source":
   editor:
     preferredLineLength: 120
     scrollPastEnd: true
+".text.todo":
+  editor:
+    preferredLineLength: 120
 "source.gfm":
   editor:
     softWrap: true
