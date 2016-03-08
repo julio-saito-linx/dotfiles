@@ -4,6 +4,7 @@
 		"azk",
 		"js"
 	],
+	"animation_enabled": false,
 	"auto_complete_triggers":
 	[
 		{
@@ -35,12 +36,11 @@
 	"color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Source Code Pro",
-	"font_size": 14,
+	"font_size": 15,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Handlebars",
 		"JavaScript",
 		"LESS",
 		"Markdown",
@@ -55,21 +55,12 @@
 	"preview_on_click": false,
 	"remember_full_screen": true,
 	"remember_open_files": false,
+	"scroll_speed": 0,
 	"soda_classic_tabs": true,
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false,
 	"word_separators": "./\\()\"':,.;<>~!@#%^&*|+=[]{}`~?",
-	"word_wrap": "false",
-
-    // Controls side bar animation when expanding or collapsing folders
-  "tree_animation_enabled": false,
-
-  // Controls animation throughout the application
-  "animation_enabled": false,
-
-	// Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to
-  // scroll slower, or set to larger than 1 to scroll faster
-  "scroll_speed": 0,
-
+	"word_wrap": "false"
 }
