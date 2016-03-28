@@ -3,15 +3,13 @@
 	{ "keys": ["shift+f2"], "command": "rename_path", "args": {"paths": ["$file"]} },
 	{ "keys": ["ctrl+;"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["ctrl+shift+;"], "command": "toggle_comment", "args": { "block": true } },
-	{
-    "keys": ["alt+;"],
-    "command": "tern_select_variable",
-    "context": [
-      {"key": "selector", "operand": "source.js"}
-    ],
-  },
   { "keys": ["alt+d", "alt+b"], "command": "ln_toggle_display", "args": {"action": "WHITE_SPACE"}},
   { "keys": ["alt+d", "alt+l"], "command": "ln_toggle_display", "args": {"action": "LINE_NO"}},
   { "keys": ["alt+d", "alt+i"], "command": "ln_toggle_display", "args": {"action": "INDENT_GUIDE"}},
-  { "keys": ["alt+d", "alt+g"], "command": "ln_toggle_display", "args": {"action": "GUTTER"}}
+  { "keys": ["alt+d", "alt+g"], "command": "ln_toggle_display", "args": {"action": "GUTTER"}},
+
+  // alguma coisa fez isso desabilitar :P
+  { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
 ]

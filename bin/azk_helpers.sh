@@ -147,19 +147,12 @@ function mztests_run_all_azk_tests() {
 }
 
   #######################################################
-  ## azk button
+  ## azk clear
   #######################################################
-function abt_master() {
-  exec_and_log sudo git remote rm azk_deploy
-  exec_and_log git fetch --all --prune
-  exec_and_log git checkout master
-  exec_and_log git pull upstream master
-}
-
-function abt_rebase_azkfile_with_master() {
-  exec_and_log git checkout azkfile && git rebase master
-}
-
-function abt_push_forcing() {
-  exec_and_log git push origin --force
+function azkclear() {
+  azk agent stop
+  sudo service docker restart
+  docker rm -f $(docker ps -f status=exited -q | tr '\r\n' ' ')
+  docker rmi $(docker images -q -f dangling=true | tr '\r\n' ' ')
+  azk agent start
 }

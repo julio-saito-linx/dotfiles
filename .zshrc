@@ -1,7 +1,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="muse"
-plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk)
+ZSH_THEME="agnoster"
+plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk zsh-autosuggestions)
+DEFAULT_USER=julio
 
 # PATHS
 export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
