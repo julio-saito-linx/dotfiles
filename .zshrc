@@ -1,7 +1,9 @@
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
-plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk zsh-autosuggestions)
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
+# zsh-autosuggestions
+plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk)
 DEFAULT_USER=julio
 
 # PATHS
