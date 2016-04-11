@@ -30,13 +30,14 @@
 		"*.swf",
 		"*.tga",
 		"*.ttf",
-		"*.zip"
+		"*.zip",
+		"/home/julio/_git/latifesta/meteor-website/.meteor/local/**"
 	],
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Source Code Pro",
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
