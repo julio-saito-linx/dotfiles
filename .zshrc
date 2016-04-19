@@ -6,6 +6,10 @@ ZSH_THEME="agnoster"
 plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk)
 DEFAULT_USER=julio
 
+#Android Studio
+export PATH="/home/julio/android-studio/bin:$PATH"
+export IBUS_ENABLE_SYNC_MODE=1
+
 # PATHS
 export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
 export PATH="/usr/local/bin:$PATH"

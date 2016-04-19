@@ -17,20 +17,15 @@ function dotfiles_subl() {
   exec_and_log subl ~/_git/dotfiles
 }
 
-function vsw() {
-  exec_and_log cd ~/_git/vscode
-  exec_and_log gulp watch
-}
-
 function vs() {
-  exec_and_log cd ~/_git/vscode
-  exec_and_log ./scripts/code.sh
+  exec_and_log ~/_git/vscode/scripts/code.sh $*
 }
 
 function vs_update() {
   exec_and_log cd ~/_git/vscode
   exec_and_log git pull
   exec_and_log ./scripts/npm.sh install --arch=x64
+  exec_and_log gulp
 }
 
 function sb() {
