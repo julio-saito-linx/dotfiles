@@ -6,6 +6,9 @@
 rm -rf "$HOME/.zshrc"
 ln -s "$PWD/.zshrc" "$HOME/.zshrc"
 
+rm -rf "$HOME/.zprofile"
+ln -s "$PWD/.zprofile" "$HOME/.zprofile"
+
 rm -rf "$HOME/.gitignore"
 ln -s "$PWD/gitignore" "$HOME/.gitignore"
 

@@ -18,6 +18,8 @@
 	],
 	"binary_file_patterns":
 	[
+		"*.css",
+		"*.css.map",
 		"*.dds",
 		"*.eot",
 		"*.gif",
@@ -25,8 +27,11 @@
 		"*.jar",
 		"*.jpeg",
 		"*.jpg",
+		"*.js",
+		"*.js.map",
 		"*.pdf",
 		"*.png",
+		"*.stats.json",
 		"*.swf",
 		"*.tga",
 		"*.ttf",
