@@ -1,5 +1,8 @@
 #Android Studio
 export PATH="/home/julio/android-studio/bin:$PATH"
+export PATH="/home/julio/Android/Sdk/platform-tools:$PATH"
+export ANDROID_HOME=~/Android/Sdk
+export ANDROID_HOME=~/Android/Sdk/platform-tools
 export IBUS_ENABLE_SYNC_MODE=1
 
 # PATHS
@@ -17,7 +20,6 @@ fi
 
 export EDITOR='subl'
 
-export ANDROID_HOME=/home/julio/Android/Sdk
 export PATH=$PATH:/home/julio/Android/Sdk/tools
 
 export LESS='-RXF'
