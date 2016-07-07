@@ -3,6 +3,7 @@
 	[
 		".zshrc",
 		"conf",
-		".zprofile"
+		".zprofile",
+		".flowconfig"
 	]
 }

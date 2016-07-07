@@ -1,26 +1,27 @@
+export EDITOR='subl'
+export LESS='-RXF'
+
 #Android Studio
 export PATH="/home/julio/android-studio/bin:$PATH"
+export PATH="/home/julio/Android/Sdk/tools:$PATH"
 export IBUS_ENABLE_SYNC_MODE=1
+export ANDROID_HOME=/home/julio/Android/Sdk
 
 # PATHS
-export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
 export PATH="/usr/local/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
-export PATH="$HOME/_git/dotfiles/flow:$PATH"
 # get my dotfiles bin accessible
 export PATH="$HOME/_git/dotfiles/bin:$PATH"
+
 # azk
-azk_clone_path="$HOME/_git/azk"
-if [ -d "${azk_clone_path}/bin" ]; then
-  export PATH="${azk_clone_path}/bin:$PATH"
+AZK_CLONE_PATH="$HOME/_git/azk"
+if [ -d "${AZK_CLONE_PATH}/bin" ]; then
+  export PATH="${AZK_CLONE_PATH}/bin:$PATH"
 fi
 
-export EDITOR='subl'
-
-export ANDROID_HOME=/home/julio/Android/Sdk
-export PATH=$PATH:/home/julio/Android/Sdk/tools
-
-export LESS='-RXF'
 
 # Man page configure
 if [[ -f "$(which most 2> /dev/null)" ]]; then

@@ -1,9 +1,4 @@
 {
-	"added_words":
-	[
-		"azk",
-		"js"
-	],
 	"animation_enabled": false,
 	"auto_complete_triggers":
 	[
@@ -18,7 +13,6 @@
 	],
 	"binary_file_patterns":
 	[
-		"*.css",
 		"*.css.map",
 		"*.dds",
 		"*.eot",
@@ -27,7 +21,6 @@
 		"*.jar",
 		"*.jpeg",
 		"*.jpg",
-		"*.js",
 		"*.js.map",
 		"*.pdf",
 		"*.png",
@@ -36,13 +29,14 @@
 		"*.tga",
 		"*.ttf",
 		"*.zip",
-		"/home/julio/_git/latifesta/meteor-website/.meteor/local/**"
+		"exportar-excel/dadosClientes1241.csv",
+		"exportar-excel/donuzScript.js"
 	],
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/1337 (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Source Code Pro",
-	"font_size": 13,
+	"font_face": "Liberation Mono",
+	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -59,7 +53,7 @@
 		"npm-shrinkwrap.json"
 	],
 	"preview_on_click": false,
-	"remember_full_screen": true,
+	"remember_full_screen": false,
 	"remember_open_files": false,
 	"scroll_speed": 0,
 	"soda_classic_tabs": true,

@@ -551,13 +551,13 @@
 		</dict>
 	<dict>
             <key>name</key>
-            <string>SublimeLinter Warning</string>
+            <string>SublimeLinter Gutter Mark</string>
             <key>scope</key>
-            <string>sublimelinter.mark.warning</string>
+            <string>sublimelinter.gutter-mark</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#DDB700</string>
+                <string>#FFFFFF</string>
             </dict>
         </dict><dict>
             <key>name</key>
@@ -571,16 +571,16 @@
             </dict>
         </dict><dict>
             <key>name</key>
-            <string>SublimeLinter Gutter Mark</string>
+            <string>SublimeLinter Warning</string>
             <key>scope</key>
-            <string>sublimelinter.gutter-mark</string>
+            <string>sublimelinter.mark.warning</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#FFFFFF</string>
+                <string>#DDB700</string>
             </dict>
         </dict></array>
 	<key>uuid</key>
-	<string>c29d9188-ad09-45ff-a41c-5fa3816b15ba</string>
+	<string>5815b34d-fb7d-4593-bf0c-4f41f8b1f0a9</string>
 </dict>
 </plist>
