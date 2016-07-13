@@ -66,17 +66,22 @@ function save() {
   read -k 1 -s git_diff_yes
   echo "=$git_diff_yes"
 
-  echo    ""
-  echo    ""
-  echo    ""
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  echo    "  ${WHITE}${BOLD}$ git add . -A${RESET}"
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  git add . -A
-
   if [ "$git_diff_yes" = "y" ]; then
     git diff HEAD
     echo    "  EXIT git diff"
+    echo    ""
+  fi
+
+  echo    ""
+  echo    "  ${GREEN}-----------------------------------------------${RESET}"
+  echo    "  ${WHITE}${BOLD}$ git add . -A?"
+  echo    "  ${GREEN}-----------------------------------------------${RESET}"
+  echo -n " ['y/N'] "
+  read -k 1 -s git_add_all
+  echo "=$git_add_all"
+  if [ "$git_diff_yes" = "y" ]; then
+    git add . -A
+    echo    "  ${WHITE}${BOLD}$ git add . -A${RESET}"
     echo    ""
   fi
 
@@ -106,4 +111,10 @@ function save() {
   echo    "  ${WHITE}${BOLD}$ git push${RESET}"
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
   git push
+
+  echo    ""
+  echo    "  ${GREEN}-----------------------------------------------${RESET}"
+  echo    "  ${WHITE}${BOLD}$ git status${RESET}"
+  echo    "  ${GREEN}-----------------------------------------------${RESET}"
+  git status
 }
