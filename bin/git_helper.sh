@@ -53,7 +53,7 @@ function save() {
   if [ "$commit_message" != "" ]; then
     echo    " ${WHITE}${BOLD}$commit_message${RESET}"
     echo    ""
-    echo -n " [ ${MAGENTA}press Ctrl+C to abort${RESET} ] "
+    echo -n " [ ${MAGENTA}press any key to ${BOLD}push${RESET}${MAGENTA} or Ctrl+C to ${BOLD}abort${RESET}${RESET} ] "
     read -k 1
 
     git commit -m "$commit_message"
