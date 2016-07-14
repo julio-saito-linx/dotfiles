@@ -36,90 +36,30 @@ function save() {
       RESET="\033[m"
   fi
 
-  echo    ""
-  echo    "  ${MAGENTA}------------------------------${RESET}"
-  echo    "  ${MAGENTA}------------------------------${RESET}"
-  echo    "  !! PUSHING CODE..."
-  echo    "  ${MAGENTA}------------------------------${RESET}"
-  echo    "  ${MAGENTA}------------------------------${RESET}"
-
-  # echo    ""
-  # echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  # echo    "  changing project files permitions to '$USER'"
-  # echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  # echo    "  ${WHITE}${BOLD}$ sudo chown -R `id -un`:`id -gn` .${RESET}"
-  # echo    ""
-  # super chown -R `id -un`:`id -gn` .
-
-  echo    ""
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  echo    "  ${WHITE}${BOLD}$ git status${RESET}"
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
   git status
 
-
-
-  echo    ""
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
   echo    "  ${WHITE}${BOLD}$ git diff HEAD${RESET}"
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
-
-  echo -n " ['y/N'] "
+  echo -n " [y/${BOLD}N${RESET}] "
   read -k 1 -s git_diff_yes
   echo "=$git_diff_yes"
 
   if [ "$git_diff_yes" = "y" ]; then
     git diff HEAD
     echo    "  EXIT git diff"
-    echo    ""
-  fi
-
-
-
-  echo    ""
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  echo    "  ${WHITE}${BOLD}$ git add . -A?"
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-
-  echo -n " ['y/N'] "
-  read -k 1 -s git_add_all
-  echo "=$git_add_all"
-  if [ "$git_diff_yes" = "y" ]; then
-    git add . -A
-    echo    "  ${WHITE}${BOLD}$ git add . -A${RESET}"
-    echo    ""
   fi
 
   if [ "$commit_message" != "" ]; then
+    echo    " ${WHITE}${BOLD}$commit_message${RESET}"
     echo    ""
-    echo    " current commit message: ${WHITE}${BOLD}$'$commit_message'${RESET}"
-    echo    ""
-    echo -n " [ press ${WHITE}${BOLD}$Ctrl + C${RESET} to abort ] "
+    echo -n " [ ${MAGENTA}press Ctrl+C to abort${RESET} ] "
     read -k 1
 
-    echo    ""
-    echo    "  ${GREEN}-----------------------------------------------${RESET}"
-    echo    "  ${WHITE}${BOLD}$ git commit -m '$commit_message'${RESET}"
-    echo    "  ${GREEN}-----------------------------------------------${RESET}"
     git commit -m "$commit_message"
-  else
-
-    echo    ""
-    echo    "  ${GREEN}-----------------------------------------------${RESET}"
-    echo    "  ${WHITE}${BOLD}$ starting vim...${RESET}"
-    echo    "  ${GREEN}-----------------------------------------------${RESET}"
-    git commit
   fi
 
-  echo    ""
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
   echo    "  ${WHITE}${BOLD}$ git push${RESET}"
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
   git push
 
-  echo    ""
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  echo    "  ${WHITE}${BOLD}$ git status${RESET}"
-  echo    "  ${GREEN}-----------------------------------------------${RESET}"
-  git status
 }
