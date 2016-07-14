@@ -58,10 +58,12 @@ function save() {
   git status
 
 
+
   echo    ""
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
   echo    "  ${WHITE}${BOLD}$ git diff HEAD${RESET}"
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
+
   echo -n " ['y/N'] "
   read -k 1 -s git_diff_yes
   echo "=$git_diff_yes"
@@ -72,10 +74,13 @@ function save() {
     echo    ""
   fi
 
+
+
   echo    ""
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
   echo    "  ${WHITE}${BOLD}$ git add . -A?"
   echo    "  ${GREEN}-----------------------------------------------${RESET}"
+
   echo -n " ['y/N'] "
   read -k 1 -s git_add_all
   echo "=$git_add_all"

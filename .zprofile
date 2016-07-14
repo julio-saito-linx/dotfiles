@@ -25,14 +25,6 @@ if [ -d "${AZK_CLONE_PATH}/bin" ]; then
   export PATH="${AZK_CLONE_PATH}/bin:$PATH"
 fi
 
-<<<<<<< HEAD
-=======
-export EDITOR='subl'
-
-export PATH=$PATH:/home/julio/Android/Sdk/tools
-
-export LESS='-RXF'
->>>>>>> 6aa4482091f1440ecaa97ed13e8a2162cd5d0ece
 
 # Man page configure
 if [[ -f "$(which most 2> /dev/null)" ]]; then
