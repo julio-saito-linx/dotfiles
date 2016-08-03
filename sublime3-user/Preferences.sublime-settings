@@ -28,9 +28,7 @@
 		"*.swf",
 		"*.tga",
 		"*.ttf",
-		"*.zip",
-		"exportar-excel/dadosClientes1241.csv",
-		"exportar-excel/donuzScript.js"
+		"*.zip"
 	],
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",

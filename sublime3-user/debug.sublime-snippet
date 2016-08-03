@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[${1} /* -debug- */]]></content>
+	<content><![CDATA[/* -debug- */${1}]]></content>
 	<tabTrigger>dd</tabTrigger>
 	<scope>source.js</scope>
-	<description>log with title</description>
+	<description>/* -debug- */</description>
 </snippet>

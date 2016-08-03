@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[/* -debug- */
+${1}
+/* -debug- */]]></content>
+	<tabTrigger>ddd</tabTrigger>
+	<scope>source.js</scope>
+	<description>/* -debug- BLOCK */</description>
+</snippet>
