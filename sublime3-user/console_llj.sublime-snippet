@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[/**/console.log(JSON.stringify(${1}, null, 2));/* -debug- */]]></content>
+	<tabTrigger>llj</tabTrigger>
+	<scope>source.js</scope>
+	<description>log with JSON.stringify</description>
+</snippet>
