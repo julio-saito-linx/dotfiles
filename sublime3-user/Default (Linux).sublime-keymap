@@ -11,6 +11,13 @@
   // alguma coisa fez isso desabilitar :P
   { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
-  { "keys": ["ctrl+shift+r"], "command": "reveal_in_side_bar"},
+  { "keys": ["ctrl+]"], "command": "reveal_in_side_bar"},
   { "keys": ["ctrl+k", "ctrl+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+  // Android MENU
+  { "keys": ["alt+m"], "command": "exec", "args": { "cmd": ["adb", "shell", "input", "keyevent", "82"]} },
+  // Android lock/ unlock
+  { "keys": ["alt+u"], "command": "exec", "args": { "cmd": ["adb", "shell", "input", "keyevent", "26"]} },
+  // Android react-native Reload
+  { "keys": ["alt+r"], "command": "exec", "args": { "cmd": ["adb", "shell", "input", "text", "RR"]} },
 ]
