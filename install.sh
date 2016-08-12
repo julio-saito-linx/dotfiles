@@ -18,9 +18,11 @@ ln -s "$PWD/.npmignore" "$HOME/.npmignore"
 rm -rf "$HOME/.gitconfig"
 ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
 
-rm -rf "$HOME/.config/terminator/config"
-ln -s "$PWD/.terminator_config" "$HOME/.config/terminator/config"
+rm -rf "$HOME/.config/sublime-text-3/Packages/User"
+ln -s "$PWD/sublime3-user" "$HOME/.config/sublime-text-3/Packages/User"
 
+rm -rf "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
+ln -s "$PWD/xfce-perchannel-xml" "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
 
 # vim configs
 
