@@ -52,11 +52,12 @@
       <property name="names-visible" type="array">
         <value type="string" value="vlc"/>
         <value type="string" value="kalarm"/>
+        <value type="string" value="octopi-notifier"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="mixer">
-      <property name="sound-card" type="string" value="PlaybackGF110HighDefinitionAudioControllerDigitalStereoHDMI2PulseAudioMixer"/>
-      <property name="track" type="string" value="Master"/>
+      <property name="sound-card" type="string" value="HDAIntelPCHAlsamixer"/>
+      <property name="track" type="string" value="Principal"/>
       <property name="command" type="string" value="xfce4-mixer"/>
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
