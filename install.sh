@@ -12,6 +12,9 @@ ln -s "$PWD/.zprofile" "$HOME/.zprofile"
 rm -rf "$HOME/.zshenv"
 ln -s "$PWD/.zshenv" "$HOME/.zshenv"
 
+rm -rf "$HOME/.xinitrc"
+ln -s "$PWD/.xinitrc" "$HOME/.xinitrc"
+
 rm -rf "$HOME/.gitignore"
 ln -s "$PWD/gitignore" "$HOME/.gitignore"
 

@@ -8,6 +8,9 @@ DEFAULT_USER=julio
 . $ZSH/oh-my-zsh.sh
 . ~/.nvm/nvm.sh
 
+# enable numpad
+setxkbmap -option numpad:microsoft
+
 # enable helpers
 . $HOME/_git/dotfiles/bin/azk_helpers.sh
 . $HOME/_git/dotfiles/bin/git_helper.sh
