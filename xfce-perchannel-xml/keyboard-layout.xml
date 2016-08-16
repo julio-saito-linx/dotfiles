@@ -6,5 +6,6 @@
     <property name="XkbLayout" type="string" value="br"/>
     <property name="XkbVariant" type="string" value=""/>
     <property name="XkbModel" type="string" value="dell"/>
+    <property name="XkbOptions" type="string" value="numpad:microsoft"/>
   </property>
 </channel>

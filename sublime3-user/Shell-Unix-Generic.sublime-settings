@@ -4,6 +4,7 @@
 		".zshrc",
 		"conf",
 		".zprofile",
-		".flowconfig"
+		".flowconfig",
+		".zshenv"
 	]
 }
