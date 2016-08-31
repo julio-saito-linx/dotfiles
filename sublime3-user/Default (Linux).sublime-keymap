@@ -19,5 +19,6 @@
   // Android lock/ unlock
   { "keys": ["alt+u"], "command": "exec", "args": { "cmd": ["adb", "shell", "input", "keyevent", "26"]} },
   // Android react-native Reload
-  { "keys": ["alt+r"], "command": "exec", "args": { "cmd": ["adb", "shell", "input", "text", "RR"]} },
+  { "keys": ["alt+r"], "command": "exec", "args": { "cmd": ["adb", "-s", "192.168.57.101:5555", "shell", "input", "text", "RR"]} },
+  { "keys": ["alt+t"], "command": "exec", "args": { "cmd": ["adb", "-s", "f9azb600j154", "shell", "input", "text", "RR"]} },
 ]

@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="terminalparty"
+ZSH_THEME="avit"
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 # zsh-autosuggestions
 plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk)

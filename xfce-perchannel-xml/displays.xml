@@ -10,8 +10,8 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="480"/>
-        <property name="Y" type="int" value="1080"/>
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
     <property name="HDMI-0" type="string" value="2. Panasonic 32&quot;">
@@ -27,4 +27,5 @@
       </property>
     </property>
   </property>
+  <property name="Notify" type="bool" value="true"/>
 </channel>

@@ -50,7 +50,9 @@
       <property name="names-visible" type="array">
         <value type="string" value="vlc"/>
         <value type="string" value="kalarm"/>
+        <value type="string" value="skype"/>
         <value type="string" value="octopi-notifier"/>
+        <value type="string" value="clipman"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="mixer">
