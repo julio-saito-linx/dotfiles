@@ -48,11 +48,15 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="thunar"/>
         <value type="string" value="vlc"/>
         <value type="string" value="kalarm"/>
+        <value type="string" value="google-chrome"/>
+        <value type="string" value="qbittorrent"/>
+        <value type="string" value="gerenciador de tarefas"/>
         <value type="string" value="skype"/>
-        <value type="string" value="octopi-notifier"/>
         <value type="string" value="clipman"/>
+        <value type="string" value="octopi-notifier"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="mixer">
