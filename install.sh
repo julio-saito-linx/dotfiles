@@ -24,6 +24,9 @@ ln -s "$PWD/.npmignore" "$HOME/.npmignore"
 rm -rf "$HOME/.gitconfig"
 ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
 
+rm -rf "$HOME/.yaourtrc"
+ln -s "$PWD/.yaourtrc" "$HOME/.yaourtrc"
+
 rm -rf "$HOME/.config/sublime-text-3/Packages/User"
 ln -s "$PWD/sublime3-user" "$HOME/.config/sublime-text-3/Packages/User"
 

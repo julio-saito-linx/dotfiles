@@ -55,6 +55,7 @@
         <value type="string" value="qbittorrent"/>
         <value type="string" value="gerenciador de tarefas"/>
         <value type="string" value="skype"/>
+        <value type="string" value="simplescreenrecorder"/>
         <value type="string" value="clipman"/>
         <value type="string" value="octopi-notifier"/>
       </property>

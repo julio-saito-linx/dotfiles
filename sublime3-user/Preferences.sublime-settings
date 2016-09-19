@@ -1,4 +1,11 @@
 {
+	"added_words":
+	[
+		"firebase",
+		"url",
+		"i18n",
+		"facebook"
+	],
 	"animation_enabled": false,
 	"auto_complete_triggers":
 	[
