@@ -41,7 +41,7 @@
 	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Liberation Mono",
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -66,6 +66,7 @@
 	"theme": "DC_3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
+	"update_check": false,
 	"word_separators": "./\\()\"':,.;<>~!@#%^&*|+=[]{}`~?",
 	"word_wrap": "false"
 }

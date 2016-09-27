@@ -55,5 +55,5 @@ function sb() {
     echo ''                                  >> project.sublime-project
   fi
 
-  exec_and_log subl project.sublime-project
+  exec_and_log subl3 project.sublime-project
 }
