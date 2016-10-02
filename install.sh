@@ -21,6 +21,9 @@ ln -s "$PWD/gitignore" "$HOME/.gitignore"
 rm -rf "$HOME/.npmignore"
 ln -s "$PWD/.npmignore" "$HOME/.npmignore"
 
+rm -rf "$HOME/.WebStorm2016.2"
+ln -s "$PWD/.WebStorm2016.2" "$HOME/.WebStorm2016.2"
+
 rm -rf "$HOME/.gitconfig"
 ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
 

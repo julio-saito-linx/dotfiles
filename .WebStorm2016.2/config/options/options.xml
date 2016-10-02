@@ -1,0 +1,31 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="evlsprt3.162" value="17" />
+    <property name="WebStorm.dumbRunEnabled" value="true" />
+    <property name="WebStorm.initialConfigurationShown" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/_git/[private]scrap-save-firebase/build/bundle.js&#10;/home/julio/_git/[private]scrap-save-firebase&#10;/home/julio/_git/dotfiles/web_storm_settings&#10;/home/julio/_git/[private]scrap-save-firebase/node_modules/.bin/webpack&#10;/home/julio/_git/[private]scrap-save-firebase/src/index.js" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="HbDisableAutoGenerateCloseTag" value="enabled" />
+    <property name="HbAutocompleteMustaches" value="enabled" />
+    <property name="HbFormatter" value="enabled" />
+    <property name="HbCommenterLanguageId" value="HTML" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="settings.code.style.selected.tab.JavaScript" value="Tabs and Indents" />
+    <property name="LayoutCode.optimizeImports" value="true" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="LayoutCode.processChangedText" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
+    <property name="selected.color.option.type" value="CUSTOM_STRING_ATTRIBUTES" />
+    <property name="KEYMAP" value="occu&#10;next oc&#10;find u&#10;sett&#10;close" />
+    <property name="HbAutoCollapseBlocks" value="disabled" />
+    <property name="PLUGIN_FILTER" value="test&#10;jest" />
+    <property name="js.rename.search.in.comments" value="true" />
+    <property name="js.rename.search.for.text.occurrences" value="false" />
+    <property name="INSPECTION_FILTER_HISTORY" value="" />
+    <property name="settings.code.style.selected.tab.JSON" value="Other" />
+    <property name="LayoutCode.rearrangeEntries" value="true" />
+    <property name="FileTemplates.SelectedTemplate" value="JavaScript File" />
+  </component>
+</application>
