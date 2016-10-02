@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"1337 Color Scheme",
 		"Alignment",
 		"All Autocomplete",
 		"Babel",
@@ -18,9 +17,11 @@
 		"EditorConfig",
 		"Elixir",
 		"Emmet",
+		"Expect",
 		"Flat Chameleon",
 		"Fold Comments",
 		"GitGutter-Edge",
+		"JavaScript Refactor",
 		"JavaScriptNext - ES6 Syntax",
 		"LESS",
 		"LineEndings",
