@@ -1,5 +1,4 @@
 system
-config/settingsRepository/repository
 config/options/find.recents.xml
 config/options/**/*statistics*.*
 config/options/recentProjectDirectories.xml
