@@ -18,7 +18,7 @@
     <property name="LayoutCode.processChangedText" value="false" />
     <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
     <property name="selected.color.option.type" value="CUSTOM_STRING_ATTRIBUTES" />
-    <property name="KEYMAP" value="occu&#10;next oc&#10;find u&#10;sett&#10;close" />
+    <property name="KEYMAP" value="back&#10;occu&#10;next oc&#10;find u&#10;sett" />
     <property name="HbAutoCollapseBlocks" value="disabled" />
     <property name="PLUGIN_FILTER" value="test&#10;jest" />
     <property name="js.rename.search.in.comments" value="true" />

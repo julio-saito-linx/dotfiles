@@ -48,14 +48,24 @@
     <option name="SHOW_PATH" value="true" />
   </component>
   <component name="NodeJsLocalInterpreters">
-    <local-interpreter path="/usr/bin/node" />
+    <local-interpreter path="/usr/bin/node">
+      <version-cache version="6.6.0" last-modified="1473992846000" />
+    </local-interpreter>
     <local-interpreter path="$USER_HOME$/.nvm/versions/node/v6.3.0/bin/node">
       <version-cache version="6.3.0" last-modified="1467824220000" />
       <npm-package value="$USER_HOME$/.nvm/versions/node/v6.3.0/lib/node_modules/npm" />
     </local-interpreter>
-    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v6.1.0/bin/node" />
-    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v6.0.0/bin/node" />
-    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v5.11.0/bin/node" />
-    <local-interpreter path="$USER_HOME$/.nvm/v0.10.40/bin/node" />
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v6.1.0/bin/node">
+      <version-cache version="6.1.0" last-modified="1462484516000" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v6.0.0/bin/node">
+      <version-cache version="6.0.0" last-modified="1461699690000" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v5.11.0/bin/node">
+      <version-cache version="5.11.0" last-modified="1461260167000" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.nvm/v0.10.40/bin/node">
+      <version-cache version="0.10.40" last-modified="1436477463000" />
+    </local-interpreter>
   </component>
 </application>
