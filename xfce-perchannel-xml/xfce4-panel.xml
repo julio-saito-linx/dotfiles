@@ -58,6 +58,7 @@
         <value type="string" value="simplescreenrecorder"/>
         <value type="string" value="clipman"/>
         <value type="string" value="psyncgui"/>
+        <value type="string" value="zoom"/>
         <value type="string" value="octopi-notifier"/>
       </property>
     </property>

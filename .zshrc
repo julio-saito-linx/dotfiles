@@ -17,7 +17,6 @@ setxkbmap -option numpad:microsoft
 . $HOME/_git/dotfiles/bin/utils.sh
 . $HOME/_git/dotfiles/bin/xclip_helpers.sh
 
-
 # tabtab source for yo package
 # uninstall by removing these lines or running `tabtab uninstall yo`
 [[ -f /home/julio/.nvm/versions/node/v5.11.0/lib/node_modules/react-native-ignite/node_modules/tabtab/.completions/yo.zsh ]] && . /home/julio/.nvm/versions/node/v5.11.0/lib/node_modules/react-native-ignite/node_modules/tabtab/.completions/yo.zsh
