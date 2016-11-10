@@ -43,7 +43,17 @@ sudo pacman -Syu && yaourt -Syua
 
 # numpad
 sudo setxkbmap -option numpad:microsoft
+
+# update pacman keys
+sudo rm -r /etc/pacman.d/gnupg
+sudo pacman -Sy gnupg archlinux-keyring manjaro-keyring
+sudo pacman-key --init
+sudo pacman-key --populate archlinux manjaro
+sudo pacman-key --refresh-keys
+
 ```
+
+
 
 
 
