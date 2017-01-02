@@ -5,4 +5,11 @@
   <property name="expire-timeout" type="int" value="3"/>
   <property name="initial-opacity" type="double" value="0.790000"/>
   <property name="theme" type="string" value="Smoke"/>
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="notify-send"/>
+      <value type="string" value="Octopi Notifier"/>
+      <value type="string" value="qBittorrent"/>
+    </property>
+  </property>
 </channel>

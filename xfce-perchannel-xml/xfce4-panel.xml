@@ -28,7 +28,7 @@
   <property name="plugins" type="empty">
     <property name="plugin-2" type="string" value="actions">
       <property name="items" type="array">
-        <value type="string" value="-lock-screen"/>
+        <value type="string" value="+lock-screen"/>
         <value type="string" value="-switch-user"/>
         <value type="string" value="-suspend"/>
         <value type="string" value="-hibernate"/>
@@ -75,11 +75,12 @@
         <value type="string" value="psyncgui"/>
         <value type="string" value="zoom"/>
         <value type="string" value="octopi-notifier"/>
+        <value type="string" value="soulseekqt-2016-1-17-64bit"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="mixer">
-      <property name="sound-card" type="string" value="HDAIntelPCHAlsamixer"/>
-      <property name="track" type="string" value="Principal"/>
+      <property name="sound-card" type="string" value="PlaybackudiointernoEstreoanalgicoPulseAudioMixer"/>
+      <property name="track" type="string" value="Master"/>
       <property name="command" type="string" value="xfce4-mixer"/>
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>

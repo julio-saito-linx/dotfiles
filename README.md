@@ -39,7 +39,7 @@ pavucontrol
 sudo pacman -Rcns plasma
 
 # update all
-sudo pacman -Syu && yaourt -Syua
+yaourt -Syua
 
 # numpad
 sudo setxkbmap -option numpad:microsoft

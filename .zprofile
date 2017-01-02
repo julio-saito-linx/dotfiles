@@ -1,4 +1,5 @@
-export EDITOR='subl'
+export EDITOR='subl3'
+export REACT_EDITOR='subl3'
 export LESS='-RXF'
 
 #Android Studio
