@@ -34,7 +34,6 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/usr/bin/google-chrome-stable %U"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal"/>
       <property name="Print" type="string" value="xfce4-screenshooter -cr"/>
@@ -44,6 +43,8 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;F2" type="string" value="xfce4-appfinder --collapsed">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/usr/bin/google-chrome-unstable %U"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;c" type="string" value="/home/julio/CerebralDebugger-linux-x64/CerebralDebugger"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

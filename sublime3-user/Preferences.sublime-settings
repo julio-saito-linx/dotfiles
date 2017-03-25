@@ -4,7 +4,10 @@
 		"firebase",
 		"url",
 		"i18n",
-		"facebook"
+		"facebook",
+		"Obama",
+		"rebasing",
+		"rebase"
 	],
 	"animation_enabled": false,
 	"auto_complete_triggers":
@@ -41,7 +44,7 @@
 	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Liberation Mono",
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":

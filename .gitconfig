@@ -3,8 +3,8 @@
 # You probably want to change the [user] section here since you are not me.
 
 [user]
-    name = Julio Makdisse Saito
-    email = saitodisse@gmail.com
+	name = Julio Makdisse Saito
+	email = saitodisse@gmail.com
 [credential]
 	helper = store
 [alias]
@@ -17,7 +17,7 @@
     diff = auto
     status = auto
     branch = auto
-    ui = true
+	ui = auto
 [core]
 	excludesfile = ~/.gitignore
     editor = vim

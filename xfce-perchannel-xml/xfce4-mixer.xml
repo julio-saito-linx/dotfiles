@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-mixer" version="1.0">
-  <property name="sound-card" type="string" value="CaptureWebcamC270MonofnicoanalgicoPulseAudioMixer"/>
+  <property name="sound-card" type="string" value="HDProWebcamC920Alsamixer"/>
   <property name="sound-cards" type="empty">
     <property name="HDAIntelPCHAlsamixer" type="array">
       <value type="string" value="Principal"/>
@@ -33,13 +33,19 @@
       <value type="string" value="Master"/>
     </property>
     <property name="CaptureWebcamC270MonofnicoanalgicoPulseAudioMixer" type="array">
-      <value type="string" value="Master"/>
+      <value type="string" value="Principal"/>
+      <value type="string" value="Headphone"/>
+      <value type="string" value="Input Source"/>
+      <value type="string" value="Input Source (1)"/>
     </property>
     <property name="PlaybackudiointernoEstreoanalgicoPulseAudioMixer" type="array">
       <value type="string" value="Master"/>
     </property>
     <property name="CaptureMonitorofudiointernoEstreoanalgicoPulseAudioMixer" type="array">
       <value type="string" value="Master"/>
+    </property>
+    <property name="HDProWebcamC920Alsamixer" type="array">
+      <value type="string" value="Microfone"/>
     </property>
   </property>
   <property name="window-height" type="int" value="413"/>

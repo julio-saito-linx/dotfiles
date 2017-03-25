@@ -66,6 +66,7 @@
         <value type="string" value="vlc"/>
         <value type="string" value="kalarm"/>
         <value type="string" value="google-chrome"/>
+        <value type="string" value="google-chrome-unstable"/>
         <value type="string" value="qbittorrent"/>
         <value type="string" value="gerenciador de tarefas"/>
         <value type="string" value="skype"/>
