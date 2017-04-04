@@ -24,6 +24,19 @@ sudo pacman -S lxde
 sudo pacman -S lxde-common lxsession openbox
 ```
 
+## teamviewer
+
+```sh
+sudo teamviewer --daemon start
+teamviewer
+
+# if is not finding connection
+sudo subl3 /etc/nsswitch.conf
+# add "mdns" to hosts
+# hosts: files mymachines mdns resolve [!UNAVAIL=return] dns myhostname
+systemctl start avahi-daemon.service
+```
+
 ## Audio
 
 ```sh

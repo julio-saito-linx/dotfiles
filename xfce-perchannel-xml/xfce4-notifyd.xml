@@ -4,6 +4,8 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="Gerenciador de atualizações"/>
+      <value type="string" value="notify-send"/>
+      <value type="string" value="pragha"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="Transmission"/>
     </property>

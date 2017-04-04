@@ -40,6 +40,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="pragha - reprodutor de músicas"/>
+        <value type="string" value="teamviewer"/>
         <value type="string" value="chromium"/>
         <value type="string" value="miniaplicativo gerenciador de redes"/>
         <value type="string" value="pamac-tray"/>
