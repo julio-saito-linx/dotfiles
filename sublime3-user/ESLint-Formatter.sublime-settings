@@ -1,0 +1,8 @@
+{
+  "node_path": {
+    "windows": "node.exe",
+    "linux": "/home/julio/.nvm/versions/node/v8.9.0/bin/node",
+    "osx": "/usr/local/bin/node"
+  },
+  "format_on_save": true
+}

@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="avit"
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 # zsh-autosuggestions
-plugins=(git rbates history-substring-search zsh-syntax-highlighting npm azk)
+plugins=(git rbates history-substring-search zsh-syntax-highlighting npm)
 DEFAULT_USER=julio
 
 . $ZSH/oh-my-zsh.sh

@@ -36,7 +36,6 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -cr"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -45,6 +44,7 @@
       </property>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;c" type="string" value="/home/julio/CerebralDebugger-linux-x64/CerebralDebugger"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/usr/bin/google-chrome-stable %U"/>
+      <property name="Print" type="string" value="/home/julio/_git/dotfiles/bin/take-screenshot.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
