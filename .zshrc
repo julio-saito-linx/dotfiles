@@ -25,3 +25,4 @@ if [ -f /home/julio/.tnsrc ]; then
     source /home/julio/.tnsrc
 fi
 ###-tns-completion-end-###
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
