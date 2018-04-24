@@ -1,14 +1,5 @@
-export EDITOR='vim'
+export EDITOR='code'
 export LESS='-RXF'
-
-#Android Studio
-# export PATH="/home/julio/android-studio/bin:$PATH"
-# export PATH="/home/julio/Android/Sdk/tools:$PATH"
-# export PATH="/home/julio/Android/Sdk/platform-tools:$PATH"
-# export ANDROID_HOME=~/Android/Sdk
-# export ANDROID_HOME=~/Android/Sdk/platform-tools
-# export IBUS_ENABLE_SYNC_MODE=1
-# export ANDROID_HOME=/home/julio/Android/Sdk
 
 # PATHS
 export NVM_DIR="$HOME/.nvm"
@@ -24,6 +15,3 @@ export PATH="$HOME/_git/dotfiles/bin:$PATH"
 if [[ -f "$(which most 2> /dev/null)" ]]; then
   export MANPAGER="$(which most) -s"
 fi
-
-# configure azk dev envs
-# export AZK_ENV=development

@@ -1,5 +1,5 @@
-export EDITOR='vim'
-export REACT_EDITOR='vim'
+export EDITOR='code'
+export REACT_EDITOR='code'
 export LESS='-RXF'
 
 # PATHS
