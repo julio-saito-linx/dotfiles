@@ -8,6 +8,6 @@
     <property name="lock-screen-suspend-hibernate" type="bool" value="false"/>
     <property name="logind-handle-lid-switch" type="bool" value="false"/>
     <property name="inactivity-sleep-mode-on-ac" type="uint" value="1"/>
-    <property name="inactivity-on-ac" type="uint" value="128"/>
+    <property name="inactivity-on-ac" type="uint" value="158"/>
   </property>
 </channel>

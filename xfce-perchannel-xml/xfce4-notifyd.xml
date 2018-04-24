@@ -8,6 +8,8 @@
       <value type="string" value="Firefox"/>
       <value type="string" value="Gerenciador de atualizações"/>
       <value type="string" value="Gerenciador de pacotes"/>
+      <value type="string" value="google-chrome"/>
+      <value type="string" value="jetbrains-toolbox"/>
       <value type="string" value="nm-applet"/>
       <value type="string" value="notify-send"/>
       <value type="string" value="pragha"/>
