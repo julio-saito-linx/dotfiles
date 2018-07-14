@@ -32,20 +32,22 @@
         <value type="string" value="-logout-dialog"/>
         <value type="string" value="-switch-user"/>
         <value type="string" value="-separator"/>
-        <value type="string" value="+logout"/>
+        <value type="string" value="-logout"/>
         <value type="string" value="-lock-screen"/>
         <value type="string" value="-hibernate"/>
         <value type="string" value="-suspend"/>
-        <value type="string" value="-restart"/>
+        <value type="string" value="+restart"/>
         <value type="string" value="-shutdown"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="thunar"/>
+        <value type="string" value="obs"/>
         <value type="string" value="toolbox"/>
         <value type="string" value="pnmixer"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="vlc"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="miniaplicativo gerenciador de redes"/>
         <value type="string" value="orage"/>
@@ -54,6 +56,7 @@
         <value type="string" value="pamac-tray"/>
         <value type="string" value="blueman-applet"/>
         <value type="string" value="clipman"/>
+        <value type="string" value="zoom"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="xnoise"/>
       </property>
@@ -63,15 +66,16 @@
     </property>
     <property name="plugin-7" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="pragha"/>
+      <property name="mpris-players" type="string" value="pragha;vlc"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
     <property name="plugin-5" type="string" value="clock">
       <property name="timezone" type="string" value="-3"/>
-      <property name="digital-format" type="string" value="%T"/>
+      <property name="digital-format" type="string" value="    %Y-%m-%d       %T   "/>
       <property name="mode" type="uint" value="2"/>
     </property>
   </property>

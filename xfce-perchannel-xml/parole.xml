@@ -5,17 +5,20 @@
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/run/media/julio/BKP/_Downloads/MOVIES/Harry Potter and the Sorcerers Stone (2001) [1080p]"/>
+    <property name="last-used-media" type="string" value="/home/saito/Vídeos"/>
   </property>
   <property name="window" type="empty">
-    <property name="maximized" type="bool" value="true"/>
-    <property name="width" type="int" value="1920"/>
-    <property name="height" type="int" value="1052"/>
+    <property name="maximized" type="bool" value="false"/>
+    <property name="width" type="int" value="1827"/>
+    <property name="height" type="int" value="934"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="100"/>
   </property>
   <property name="playlist" type="empty">
-    <property name="show-playlist" type="bool" value="false"/>
+    <property name="show-playlist" type="bool" value="true"/>
+  </property>
+  <property name="video" type="empty">
+    <property name="aspect-ratio" type="string" value="PAROLE_ASPECT_RATIO_AUTO"/>
   </property>
 </channel>
