@@ -8,6 +8,9 @@
     <property name="lock-screen-suspend-hibernate" type="bool" value="false"/>
     <property name="logind-handle-lid-switch" type="bool" value="false"/>
     <property name="inactivity-sleep-mode-on-ac" type="uint" value="1"/>
-    <property name="inactivity-on-ac" type="uint" value="158"/>
+    <property name="inactivity-on-ac" type="uint" value="14"/>
+    <property name="show-tray-icon" type="bool" value="false"/>
+    <property name="general-notification" type="bool" value="false"/>
+    <property name="dpms-on-ac-off" type="uint" value="20"/>
   </property>
 </channel>

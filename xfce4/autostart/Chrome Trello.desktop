@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Chrome Trello
+Comment=
+Exec=/usr/bin/google-chrome-stable --user-data-dir="/home/saito/.config/google-chrome-latife" https://trello.com/b/I6weLRgf/ti-latife
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+

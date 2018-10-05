@@ -12,7 +12,7 @@ DEFAULT_USER=saito
 setxkbmap -option numpad:microsoft
 
 # enable helpers
-. $HOME/_git/dotfiles/bin/azk_helpers.sh
+# . $HOME/_git/dotfiles/bin/azk_helpers.sh
 . $HOME/_git/dotfiles/bin/git_helper.sh
 . $HOME/_git/dotfiles/bin/utils.sh
 . $HOME/_git/dotfiles/bin/xclip_helpers.sh

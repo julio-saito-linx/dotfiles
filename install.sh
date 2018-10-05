@@ -35,6 +35,9 @@ ln -s "$PWD/.yaourtrc" "$HOME/.yaourtrc"
 rm -rf "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
 ln -s "$PWD/xfce-perchannel-xml" "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
 
+rm -rf "$HOME/.config/autostart"
+ln -s "$PWD/xfce4/autostart" "$HOME/.config/autostart"
+
 # vim configs
 
 # rm -rf "$HOME/.vimrc"

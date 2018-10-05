@@ -5,12 +5,12 @@
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/saito/Vídeos"/>
+    <property name="last-used-media" type="string" value="/run/media/saito/BKP2/VIDEOS/ANIMES/Shingeki no Kyojin S02"/>
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="false"/>
-    <property name="width" type="int" value="1827"/>
-    <property name="height" type="int" value="934"/>
+    <property name="width" type="int" value="890"/>
+    <property name="height" type="int" value="431"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="100"/>

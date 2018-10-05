@@ -43,8 +43,8 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;c" type="string" value="/home/saito/cerebral-debugger/cerebral-debugger"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/usr/bin/google-chrome-stable %U"/>
       <property name="Print" type="string" value="/home/saito/_git/dotfiles/bin/take-screenshot.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/usr/bin/google-chrome-stable --user-data-dir=&quot;/home/saito/.config/google-chrome-latife&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
