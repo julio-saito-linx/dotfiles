@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[/**/.do((x) => console.log('${1}', x))/*-debug-*/]]></content>
-	<tabTrigger>do</tabTrigger>
-	<scope>source.js</scope>
-	<description>RxJS do console.log</description>
-</snippet>

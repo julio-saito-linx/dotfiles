@@ -20,7 +20,7 @@
     <property name="double_click_action" type="string" value="maximize"/>
     <property name="double_click_distance" type="int" value="5"/>
     <property name="double_click_time" type="int" value="250"/>
-    <property name="easy_click" type="string" value="Alt"/>
+    <property name="easy_click" type="string" value="Nenhuma"/>
     <property name="focus_delay" type="int" value="250"/>
     <property name="focus_hint" type="bool" value="true"/>
     <property name="focus_new" type="bool" value="true"/>
@@ -61,7 +61,7 @@
     <property name="title_alignment" type="string" value="center"/>
     <property name="title_font" type="string" value="Sans Bold 9"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
-    <property name="titleless_maximize" type="bool" value="true"/>
+    <property name="titleless_maximize" type="bool" value="false"/>
     <property name="title_shadow_active" type="string" value="false"/>
     <property name="title_shadow_inactive" type="string" value="false"/>
     <property name="title_vertical_offset_active" type="int" value="0"/>
@@ -88,5 +88,6 @@
       <value type="string" value="f12"/>
       <value type="string" value="Espaço de trabalho 9"/>
     </property>
+    <property name="margin_right" type="int" value="0"/>
   </property>
 </channel>

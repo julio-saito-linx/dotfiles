@@ -8,5 +8,5 @@ Exec=/usr/bin/telegram-desktop
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
-Hidden=false
+Hidden=true
 

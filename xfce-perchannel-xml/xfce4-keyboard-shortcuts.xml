@@ -12,11 +12,13 @@
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
       <property name="XF86WWW" type="empty"/>
       <property name="XF86Mail" type="empty"/>
+      <property name="Print" type="empty"/>
     </property>
     <property name="custom" type="empty">
       <property name="&lt;Alt&gt;F3" type="empty">
@@ -35,7 +37,6 @@
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -43,8 +44,12 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;c" type="string" value="/home/saito/cerebral-debugger/cerebral-debugger"/>
-      <property name="Print" type="string" value="/home/saito/_git/dotfiles/bin/take-screenshot.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/usr/bin/google-chrome-stable --user-data-dir=&quot;/home/saito/.config/google-chrome-latife&quot;"/>
+      <property name="Print" type="string" value="/home/saito/_git/dotfiles/bin/take-screenshot.sh">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;b" type="string" value="/usr/bin/google-chrome-stable --user-data-dir=/home/saito/.config/google-chrome"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="/usr/bin/xfce4-terminal"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

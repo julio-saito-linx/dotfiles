@@ -11,7 +11,7 @@ echo "site-interno: abre e aguarda "
 /usr/bin/wmctrl -s 1
 /usr/bin/xfce4-terminal \
   --working-directory='/home/saito/_git/latife/site/site-interno/' \
-  -e='zsh -c "cd /home/saito/_git/latife/site/site-interno; code .; npm start; zsh"' > /dev/null 2>&1 &
+  -e='fish -c "cd /home/saito/_git/latife/site/site-interno; code .; npm start"' > /dev/null 2>&1 &
 
 while (( i < contadorMaximo ))
 do

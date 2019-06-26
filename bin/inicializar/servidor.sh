@@ -11,7 +11,7 @@ echo "servidor: abre e aguarda "
 /usr/bin/wmctrl -s 0
 /usr/bin/xfce4-terminal \
   --working-directory='/home/saito/_git/latife/servidor' \
-  -e='zsh -c "cd /home/saito/_git/latife/servidor; code .; npm start; zsh"' > /dev/null 2>&1 &
+  -e='fish -c "cd /home/saito/_git/latife/servidor; code .; npm start"' > /dev/null 2>&1 &
 
 while (( i < contadorMaximo ))
 do

@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[console.log({${2}: toJS(${1})}); /* -debug- */]]></content>
-	<tabTrigger>tjs</tabTrigger>
-	<scope>source.js</scope>
-	<description>/* MOBX toJS debug block */</description>
-</snippet>
