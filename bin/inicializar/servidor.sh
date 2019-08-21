@@ -16,7 +16,7 @@ echo "servidor: abre e aguarda "
 while (( i < contadorMaximo ))
 do
   
-  ACHOU_SE_ZERO=$(/usr/bin/wmctrl -l | grep "0 linuxjulio servidor" > /dev/null 2>&1; echo "$?")
+  ACHOU_SE_ZERO=$(/usr/bin/wmctrl -l | grep "servidor" > /dev/null 2>&1; echo "$?")
   if [ $ACHOU_SE_ZERO != 0 ]; then
     echo "$ACHOU_SE_ZERO, $i"
     sleep 1

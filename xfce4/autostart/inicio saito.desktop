@@ -2,11 +2,12 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=Inicializa do BIN
+Name=inicio saito
 Comment=
 Exec=/home/saito/_git/dotfiles/bin/inicializar/_00_executar.sh
 OnlyShowIn=XFCE;
+RunHook=0
 StartupNotify=false
 Terminal=false
-Hidden=false
+Hidden=true
 

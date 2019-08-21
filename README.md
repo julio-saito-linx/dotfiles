@@ -27,6 +27,7 @@ sudo pacman -S lxde-common lxsession openbox
 ## teamviewer
 
 ```sh
+yay -S --noconfirm teamviewer
 sudo teamviewer --daemon start
 teamviewer
 

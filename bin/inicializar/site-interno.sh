@@ -16,7 +16,7 @@ echo "site-interno: abre e aguarda "
 while (( i < contadorMaximo ))
 do
 
-  ACHOU_SE_ZERO=$(/usr/bin/wmctrl -l | grep "1 linuxjulio site-interno" > /dev/null 2>&1; echo "$?")
+  ACHOU_SE_ZERO=$(/usr/bin/wmctrl -l | grep "site-interno" > /dev/null 2>&1; echo "$?")
   if [ $ACHOU_SE_ZERO != 0 ]; then
     echo "$ACHOU_SE_ZERO, $i"
     sleep 1
