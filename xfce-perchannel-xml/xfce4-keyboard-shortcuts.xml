@@ -36,9 +36,6 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="xfce4-taskmanager"/>
       <property name="XF86Calculator" type="string" value="galculator"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -fd 1"/>
-      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -wd 1"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;x" type="string" value="xkill"/>
@@ -47,7 +44,7 @@
       <property name="&lt;Super&gt;apostrophe" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;c" type="string" value="/home/saito/_git/cerebral-debugger-3.0.1/cerebral-debugger"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;i" type="string" value="/home/saito/_git/dotfiles/bin/inicializar/_00_executar.sh"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;r" type="string" value="sudo systemctl restart display-manager.service"/>
+      <property name="Print" type="string" value="/usr/bin/flameshot gui"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

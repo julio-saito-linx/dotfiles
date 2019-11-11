@@ -8,3 +8,5 @@ X-GNOME-Autostart-Delay=5
 X-MATE-Autostart-Delay=5
 X-DEEPIN-Autostart-Delay=5
 Categories=System;
+Hidden=false
+

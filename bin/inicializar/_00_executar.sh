@@ -5,4 +5,4 @@
 /home/saito/_git/dotfiles/bin/inicializar/servidor.sh >> /tmp/_00_executar.log; \
 # /home/saito/_git/dotfiles/bin/inicializar/google-chrome.localhost.sh >> /tmp/_00_executar.log; \
 # /home/saito/_git/dotfiles/bin/inicializar/telegram.sh >> /tmp/_00_executar.log; \
-/home/saito/_git/dotfiles/bin/inicializar/google-chrome.sh >> /tmp/_00_executar.log;
+# /home/saito/_git/dotfiles/bin/inicializar/google-chrome.sh >> /tmp/_00_executar.log;
