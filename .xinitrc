@@ -1,3 +1,6 @@
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
 Section "InputClass"
         Identifier "system-keyboard"
         MatchIsKeyboard "on"

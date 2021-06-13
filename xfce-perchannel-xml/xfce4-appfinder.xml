@@ -43,4 +43,5 @@
       <property name="save" type="bool" value="false"/>
     </property>
   </property>
+  <property name="item-icon-size" type="uint" value="3"/>
 </channel>

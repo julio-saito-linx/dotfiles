@@ -20,7 +20,7 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
-    editor = vim
+	editor = code --wait
     compression = -1
 	autocrlf = input
 [apply]
@@ -51,3 +51,6 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[init]
+	defaultBranch = main
+	templatedir = /home/saito/.git-templates
