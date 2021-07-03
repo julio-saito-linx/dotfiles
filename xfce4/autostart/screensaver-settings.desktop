@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Proteção de Tela
-Comment=Definir os tempos de espera do protetor de tela
-Exec=xset s 0 dpms 1200 1200 1200
-Hidden=true
-

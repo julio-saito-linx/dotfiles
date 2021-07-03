@@ -1,6 +1,0 @@
-2gb -> ../../sdd1
-3\x20MP3\x20\x282\x29 -> ../../sdc3
-Files -> ../../sda2
-Movies\x201 -> ../../sdf1
-Movies\x202 -> ../../sdb1
-System\x20Reserved -> ../../sdc1
