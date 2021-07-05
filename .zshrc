@@ -96,6 +96,13 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
+# Aliases
+alias zshrc="code ~/_git/dotfiles/.zshrc"
+alias p1="cd ~/_git/nextjs-opinionated; code .; yarn dev"
+alias p2="cd ~/_git/nextjs-opinionated-hasura; code .; yarn dev"
+alias p1-p2-merge="cd ~/_git/nextjs-opinionated-hasura; git pull git@github.com:nextjs-opinionated/nextjs-opinionated.git main"
+alias live="cd ~/_git/live-shopping; code .; yarn dev"
+alias intelligent="cd ~/_git/intelligent-chat; code .; yarn dev"
+alias p2-live-merge="cd ~/_git/live-shopping; git pull git@github.com:nextjs-opinionated/nextjs-opinionated-hasura.git main"
+alias p2-intelligent-merge="cd ~/_git/intelligent-chat; git pull git@github.com:nextjs-opinionated/nextjs-opinionated-hasura.git main"
+alias docker-clear="docker ps -aq | xargs -I {} docker stop {}; docker ps -aq | xargs -I {} docker rm {}"
