@@ -37,6 +37,19 @@ yay -Syyuu --noconfirm
 
 # yarn
 sudo npm install --global yarn
+
+# docker
+sudo systemctl start docker.service
+sudo systemctl start containerd.service
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+sudo gpasswd -a julio docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+docker info
+
+# restart session
 ```
 
 ### gnome config
