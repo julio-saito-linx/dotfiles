@@ -25,14 +25,18 @@ yay -S --noconfirm   docker
 yay -S --noconfirm   obs-studio
 yay -S --noconfirm   zoom
 yay -S --noconfirm   github-cli
-yay -S --noconfirm   unified-remote-server
 yay -S --noconfirm   google-chrome
+yay -S --noconfirm   telegram-desktop-bin
+yay -S --noconfirm   nodejs-lts-gallium
 
 # fonts
 yay -S --noconfirm   ttf-joypixels ttf-liberation ttf-droid
 
 # update all
 yay -Syyuu --noconfirm
+
+# yarn
+sudo npm install --global yarn
 ```
 
 ### gnome config
