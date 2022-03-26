@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:$HOME/_git/dotfiles/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/saito/.oh-my-zsh"
+export ZSH="/home/julio/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -97,31 +97,10 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Aliases
-alias zshrc="code ~/_git/dotfiles/.zshrc"
+alias zshrc="cd ~/_git/dotfiles; code ~/_git/dotfiles/.zshrc"
 
-alias p1="cd ~/_git/nextjs-opinionated; code ."
-alias p1-dev="cd ~/_git/nextjs-opinionated; code .; yarn dev"
-alias p1-storybook="cd ~/_git/nextjs-opinionated; code .; yarn storybook"
-
-alias p2="cd ~/_git/nextjs-opinionated-hasura; code ."
-alias p2-dev="cd ~/_git/nextjs-opinionated-hasura; code .; yarn dev"
-alias p2-storybook="cd ~/_git/nextjs-opinionated-hasura; code .; yarn storybook"
-
-alias p1-p2-merge="cd ~/_git/nextjs-opinionated-hasura; git pull git@github.com:nextjs-opinionated/nextjs-opinionated.git main"
-
-alias live="cd ~/_git/live-shopping; code ."
-alias live-dev="cd ~/_git/live-shopping; code .; yarn dev"
-alias live-storybook="cd ~/_git/live-shopping; code .; yarn storybook"
-alias p2-live-merge="cd ~/_git/live-shopping; git pull git@github.com:nextjs-opinionated/nextjs-opinionated-hasura.git main"
-
-alias intelligent="cd ~/_git/intelligent-chat; code ."
-alias intelligent-dev="cd ~/_git/intelligent-chat; code .; yarn dev"
-alias intelligent-storybook="cd ~/_git/intelligent-chat; code .; yarn storybook"
-alias p2-intelligent-merge="cd ~/_git/intelligent-chat; git pull git@github.com:nextjs-opinionated/nextjs-opinionated-hasura.git main"
-
-alias pagina-dos-links="cd ~/_git/pagina-dos-links; code ."
-alias pagina-dos-links-dev="cd ~/_git/pagina-dos-links; code .; yarn dev"
-alias pagina-dos-links-storybook="cd ~/_git/pagina-dos-links; code .; yarn storybook"
-alias p1-pagina-dos-links-merge="cd ~/_git/pagina-dos-links; git pull git@github.com:nextjs-opinionated/nextjs-opinionated.git main"
+alias conv="cd ~/_git/conversational; code ."
+alias conv-dev="cd ~/_git/conversational; code .; yarn dev"
+alias conv-storybook="cd ~/_git/conversational; code .; yarn storybook"
 
 alias docker-clear="docker ps -aq | xargs -I {} docker stop {}; docker ps -aq | xargs -I {} docker rm {}"
