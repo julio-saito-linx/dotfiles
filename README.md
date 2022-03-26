@@ -22,12 +22,14 @@ yay -S --noconfirm   nodejs-lts-fermium npm
 yay -S --noconfirm   visual-studio-code-bin
 yay -S --noconfirm   slack-desktop
 yay -S --noconfirm   docker
+yay -S --noconfirm   docker-compose
 yay -S --noconfirm   obs-studio
 yay -S --noconfirm   zoom
 yay -S --noconfirm   github-cli
 yay -S --noconfirm   google-chrome
 yay -S --noconfirm   telegram-desktop-bin
 yay -S --noconfirm   nodejs-lts-gallium
+yay -S --noconfirm   jq
 
 # fonts
 yay -S --noconfirm   ttf-joypixels ttf-liberation ttf-droid
@@ -37,6 +39,9 @@ yay -Syyuu --noconfirm
 
 # yarn
 sudo npm install --global yarn
+
+## hasura cli
+curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
 
 # docker
 sudo systemctl start docker.service
