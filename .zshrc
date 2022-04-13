@@ -96,11 +96,12 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+cd ~/_git/conversational
+
 # Aliases
 alias zshrc="cd ~/_git/dotfiles; code ~/_git/dotfiles/.zshrc"
-
 alias conv="cd ~/_git/conversational; code ."
 alias conv-dev="cd ~/_git/conversational; code .; yarn dev"
 alias conv-storybook="cd ~/_git/conversational; code .; yarn storybook"
-
 alias docker-clear="docker ps -aq | xargs -I {} docker stop {}; docker ps -aq | xargs -I {} docker rm {}"
